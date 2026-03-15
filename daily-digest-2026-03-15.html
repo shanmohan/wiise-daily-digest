@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Agentic Tech Daily Digest — Sunday, March 15, 2026</title>
+    <style>
+        /* Base styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            line-height: 1.65;
+            color: #1a1a1a;
+            background: #fff;
+        }
+
+        /* Screen layout */
+        @media screen {
+            body { padding: 2rem; }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            a { color: #1a4d8f; }
+            a:hover { color: #0d2b52; }
+            section { border-bottom: 1px solid #ddd; padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+            section:last-of-type { border-bottom: none; }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                margin: 2cm;
+                font-size: 10.5pt;
+                line-height: 1.55;
+            }
+            .container { max-width: 100%; }
+            .no-print { display: none !important; }
+            a { color: #1a1a1a; text-decoration: none; }
+            a[href]:after {
+                content: " (" attr(href) ")";
+                font-size: 8pt;
+                color: #555;
+                word-break: break-all;
+            }
+            .toc a[href]:after { content: ""; }
+            h2 { page-break-before: always; }
+            .masthead + .toc h2 { page-break-before: avoid; }
+            .article-entry {
+                page-break-inside: avoid;
+            }
+            .masthead { page-break-before: avoid; page-break-after: avoid; }
+            section { border: none; }
+        }
+
+        /* Masthead */
+        .masthead {
+            text-align: center;
+            padding: 1.5rem 0 1rem;
+            border-bottom: 3px double #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+        .masthead h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #1a1a1a;
+            margin-bottom: 0.25rem;
+        }
+        .masthead .date {
+            font-size: 12pt;
+            font-style: italic;
+            color: #444;
+        }
+        .masthead .tagline {
+            font-size: 9pt;
+            color: #777;
+            margin-top: 0.35rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 2rem;
+            padding: 1rem 1.5rem;
+            border: 1px solid #ccc;
+        }
+        .toc h2 {
+            font-size: 13pt;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+        .toc ol {
+            padding-left: 1.25rem;
+        }
+        .toc li {
+            margin-bottom: 0.3rem;
+            font-size: 10.5pt;
+        }
+        .toc a { text-decoration: none; }
+
+        /* Section headings */
+        h2 {
+            font-size: 16pt;
+            color: #1a1a1a;
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 0.35rem;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Article entries */
+        .article-entry {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dotted #ccc;
+        }
+        .article-entry:last-child { border-bottom: none; }
+        .article-entry h3 {
+            font-size: 12.5pt;
+            color: #1a1a1a;
+            margin-bottom: 0.2rem;
+            line-height: 1.35;
+        }
+        .article-entry .source {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #666;
+            margin-bottom: 0.4rem;
+        }
+        .article-entry p {
+            font-size: 10.5pt;
+            margin-bottom: 0.3rem;
+        }
+        .article-entry .url {
+            font-size: 9pt;
+            word-break: break-all;
+        }
+
+        /* Stats box */
+        .stat-box {
+            background: #f7f7f7;
+            border-left: 3px solid #1a1a1a;
+            padding: 0.5rem 0.75rem;
+            margin: 0.75rem 0;
+            font-size: 10pt;
+        }
+        @media print {
+            .stat-box { background: none; border-left: 2px solid #888; }
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px solid #1a1a1a;
+            text-align: center;
+            font-size: 9pt;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- MASTHEAD -->
+    <div class="masthead">
+        <h1>AI &amp; Agentic Tech Daily Digest</h1>
+        <div class="date">Sunday, March 15, 2026</div>
+        <div class="tagline">Intelligence &bull; Infrastructure &bull; Innovation</div>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="toc">
+        <h2>Today's Briefing</h2>
+        <ol>
+            <li><a href="#s1">Agentic AI &amp; Frameworks</a> &mdash; 4 stories</li>
+            <li><a href="#s2">Developer Tools &amp; Capabilities</a> &mdash; 4 stories</li>
+            <li><a href="#s3">Enterprise &amp; Products</a> &mdash; 4 stories</li>
+            <li><a href="#s4">Benchmarks &amp; Research</a> &mdash; 5 stories</li>
+            <li><a href="#s5">Industry Trends, Funding &amp; Regulation</a> &mdash; 5 stories</li>
+        </ol>
+    </div>
+
+    <!-- ==================== SECTION 1 ==================== -->
+    <section>
+        <h2 id="s1">1. Agentic AI &amp; Frameworks</h2>
+
+        <div class="article-entry">
+            <h3>Microsoft Unifies AutoGen and Semantic Kernel Into a Single Agent Framework</h3>
+            <div class="source">AIMultiple &bull; March 2026</div>
+            <p>Microsoft has officially placed AutoGen into maintenance mode and merged its capabilities with Semantic Kernel to create the unified Microsoft Agent Framework, targeting a 1.0 GA release in Q1 2026. The new framework adds OpenTelemetry observability, cross-language support for Python and .NET, and a no-code prototyping tool called AutoGen Studio. For CTOs evaluating Microsoft's agentic stack, this consolidation signals a clear direction: one SDK to rule them all.</p>
+            <div class="url"><a href="https://aimultiple.com/agentic-frameworks">aimultiple.com/agentic-frameworks</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>CrewAI Hits 44K GitHub Stars, Claims 60% Fortune 500 Adoption</h3>
+            <div class="source">AlphaMatch AI &bull; March 2026</div>
+            <p>CrewAI has surged to become the most-starred agentic framework on GitHub with over 44,000 stars, backed by $18 million in funding and more than 100,000 certified developers. The company claims adoption across 60% of the Fortune 500 and reports over 60 million monthly agent executions. Benchmark data shows CrewAI executing certain workflows 5.76 times faster than LangGraph, though each framework targets different use cases.</p>
+            <div class="url"><a href="https://www.alphamatch.ai/blog/top-agentic-ai-frameworks-2026">alphamatch.ai/blog/top-agentic-ai-frameworks-2026</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>MCP Becomes the "USB-C for AI Agents" — Industry Convergence Accelerates</h3>
+            <div class="source">SoftMax Data &bull; March 2026</div>
+            <p>Anthropic's Model Context Protocol (MCP) is rapidly becoming the universal standard for connecting AI agents to external tools and data sources. OpenAI, Microsoft, and Google have all publicly embraced MCP, while LangGraph, CrewAI, and AutoGen have each built native integration points. For enterprise teams, this means agent tooling is becoming portable across frameworks — reducing vendor lock-in and enabling mix-and-match architectures.</p>
+            <div class="url"><a href="https://blog.softmaxdata.com/definitive-guide-to-agentic-frameworks-in-2026-langgraph-crewai-ag2-openai-and-more/">blog.softmaxdata.com</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>Gartner: One-Third of Agentic AI Will Be Multi-Agent by 2027, but 40% of Projects Risk Cancellation</h3>
+            <div class="source">Turing &bull; March 2026</div>
+            <p>Gartner's latest forecast projects that a third of all agentic AI deployments will use multi-agent orchestration by 2027, confirming the shift from single-agent demos to production-grade multi-agent systems. However, the firm also warns that over 40% of agentic AI projects could be cancelled due to runaway costs, unclear business value, or insufficient risk controls. The takeaway for CTOs: governance and cost monitoring must be built in from day one.</p>
+            <div class="url"><a href="https://www.turing.com/resources/ai-agent-frameworks">turing.com/resources/ai-agent-frameworks</a></div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 2 ==================== -->
+    <section>
+        <h2 id="s2">2. Developer Tools &amp; Capabilities</h2>
+
+        <div class="article-entry">
+            <h3>Claude Code Becomes the Most-Loved AI Coding Tool in Under a Year</h3>
+            <div class="source">TLDL AI Digest &bull; March 2026</div>
+            <p>Anthropic's Claude Code has claimed the top spot in developer satisfaction just eight months after its May 2025 launch, earning a 46% "most loved" rating — compared to 19% for Cursor and 9% for GitHub Copilot. Operating as a terminal-native agent with deep reasoning capabilities, Claude Code is priced at $17/month for Pro or $100+/month for Max. The tool's rapid ascent signals a shift toward CLI-first, agentic coding workflows.</p>
+            <div class="url"><a href="https://www.tldl.io/resources/ai-coding-tools-2026">tldl.io/resources/ai-coding-tools-2026</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>Windsurf Tops LogRocket's March 2026 Power Rankings with Wave 13</h3>
+            <div class="source">LogRocket Blog &bull; March 2026</div>
+            <p>Windsurf has taken the top position in LogRocket's March 2026 AI dev tool power rankings, driven by its Wave 13 release. Standout features include Arena Mode — which lets developers compare AI models side-by-side with blinded identities and voting — and an enhanced Plan Mode for smarter task orchestration. The tool now fully supports agentic coding via its Cascade engine, pushing the IDE-based tools market forward.</p>
+            <div class="url"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">blog.logrocket.com/ai-dev-tool-power-rankings</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>GitHub Copilot Opens Claude and Codex Access to All Paid Users</h3>
+            <div class="source">Lushbinary &bull; February 2026</div>
+            <p>GitHub's February 2026 update extended access to Anthropic's Claude and OpenAI's Codex models to all paid Copilot users, ending the Enterprise-only restriction. Developers can now assign GitHub Issues directly to AI coding agents — including Copilot, Claude, and Codex — which autonomously write code, create pull requests, and respond to feedback. At $10/month for Copilot Pro, it remains the cheapest entry point with unlimited completions.</p>
+            <div class="url"><a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">lushbinary.com</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>Google Antigravity Offers Free Access to Claude Opus 4.5, Gemini 3 Flash, and GPT-OSS</h3>
+            <div class="source">LogRocket Blog &bull; March 2026</div>
+            <p>Google's Antigravity IDE maintains second place in the power rankings thanks to its revolutionary approach: offering the most diverse model lineup of any coding tool entirely free during its preview period. Developers get access to Claude Opus 4.5, Gemini 3 Flash, and GPT-OSS without paying a cent. For teams evaluating AI tools, this is a compelling trial opportunity — though pricing post-preview remains unknown.</p>
+            <div class="url"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">blog.logrocket.com/ai-dev-tool-power-rankings</a></div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 3 ==================== -->
+    <section>
+        <h2 id="s3">3. Enterprise &amp; Products</h2>
+
+        <div class="article-entry">
+            <h3>Microsoft Launches Copilot Cowork — Powered by Anthropic's Claude</h3>
+            <div class="source">Axios &bull; March 9, 2026</div>
+            <p>Microsoft launched Copilot Cowork, a new AI-powered autonomous worker that plans and executes multi-step tasks across Outlook, Teams, and Excel. Notably, it's powered by Anthropic's Claude rather than solely OpenAI models, marking a strategic diversification of Microsoft's AI stack. The product signals that enterprise AI copilots are evolving from suggestion tools into full task-execution agents. Broader access rolls out in late March 2026.</p>
+            <div class="url"><a href="https://www.axios.com/2026/03/09/microsoft-copilot-cowork-anthropic">axios.com/2026/03/09/microsoft-copilot-cowork-anthropic</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>OpenAI Retires GPT-5.1, Ships GPT-5.4 with 1M-Token Context Window</h3>
+            <div class="source">OpenAI Release Notes &bull; March 2026</div>
+            <p>OpenAI retired its GPT-5.1 model family on March 11 and auto-migrated all conversations to GPT-5.3 or GPT-5.4. The new GPT-5.4, released March 5, is described as the most capable model for professional work, supporting up to 1 million tokens of context via API. Separately, OpenAI enabled write actions for Google and Microsoft Apps in ChatGPT, allowing AI to draft emails, create documents, and schedule meetings.</p>
+            <div class="url"><a href="https://releasebot.io/updates/openai">releasebot.io/updates/openai</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>Anthropic's Claude Cowork Triggers Near-$1 Trillion Software Selloff</h3>
+            <div class="source">Crescendo AI News &bull; March 2026</div>
+            <p>Anthropic's Claude Cowork — a business product enabling non-technical workers to manipulate, read, and analyze files directly on their computers — sent shockwaves through software markets when it launched, contributing to a nearly $1 trillion selloff in software stocks. The product's ability to replace routine software workflows has made it both a game-changer for enterprise productivity and an existential concern for SaaS incumbents.</p>
+            <div class="url"><a href="https://www.crescendo.ai/news/latest-ai-news-and-updates">crescendo.ai/news</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>OpenAI Launches "Frontier Alliances" With Accenture, McKinsey, BCG, and Capgemini</h3>
+            <div class="source">Computerworld &bull; March 2026</div>
+            <p>OpenAI has formed a "Frontier Alliances" initiative partnering with top consulting firms — Accenture, BCG, Capgemini, and McKinsey — to accelerate enterprise AI adoption. With 900 million weekly active users and $25 billion in annualized revenue, OpenAI is pushing aggressively into enterprise services. For CTOs, this means major consulting engagements will increasingly be built around OpenAI's platform as the default stack.</p>
+            <div class="url"><a href="https://www.computerworld.com/article/4015023/openai-latest-news-and-insights.html">computerworld.com</a></div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 4 ==================== -->
+    <section>
+        <h2 id="s4">4. Benchmarks &amp; Research</h2>
+
+        <div class="article-entry">
+            <h3>Claude Opus 4.6 Leads SWE-bench at 75.6%, Ships 1M-Token Context Window</h3>
+            <div class="source">LLM Stats &bull; March 2026</div>
+            <p>Anthropic's Claude Opus 4.6 has set a new benchmark with a 75.6% score on SWE-bench and a 1-million-token context window in beta. The model also ships 128K output tokens and has been deployed as an add-in inside Microsoft PowerPoint and Excel. Meanwhile, Claude Sonnet 4.6 is now the default free model on claude.ai, preferred over Opus 4.5 in Claude Code 59% of the time — suggesting that smaller, faster models are winning developer preference for daily work.</p>
+            <div class="url"><a href="https://llm-stats.com/ai-news">llm-stats.com/ai-news</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>Google Gemini 3.1 Pro Doubles Reasoning Performance on ARC-AGI-2</h3>
+            <div class="source">LogRocket &bull; March 2026</div>
+            <p>Gemini 3.1 Pro enters at number two in the power rankings with a 77.1% ARC-AGI-2 score — more than doubling its predecessor's reasoning performance. Priced at $2 per million input tokens and $12 per million output tokens, it offers a compelling price-to-performance ratio. Google's Gemini 3.1 Flash-Lite variant, launched March 3, pushes the efficiency envelope with 2.5x faster time-to-first-token at just $0.25 per million input tokens.</p>
+            <div class="url"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">blog.logrocket.com</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>NVIDIA Nemotron 3 Super: 120B Hybrid Model with 12B Active Parameters</h3>
+            <div class="source">DevFlokers &bull; March 2026</div>
+            <p>NVIDIA released Nemotron 3 Super, a 120-billion-parameter hybrid Mamba-Transformer model using mixture-of-experts with only 12 billion active parameters at inference. The model supports a 1-million-token context window and delivers 2.2x throughput compared to GPT-OSS-120B. For enterprises running on-premise or at the edge, this hybrid architecture could unlock frontier-class reasoning at a fraction of the compute cost.</p>
+            <div class="url"><a href="https://www.devflokers.com/blog/ai-breakthroughs-march-2026">devflokers.com/blog/ai-breakthroughs-march-2026</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>Chinese AI Models Challenge Western Incumbents: MiniMax M2.5 Rivals Claude Opus</h3>
+            <div class="source">Mean CEO Blog &bull; March 2026</div>
+            <p>Five new AI models from Chinese companies — Tencent, Alibaba, Baidu, ByteDance, and MiniMax — debuted this month, with MiniMax's M2.5 earning praise for rivaling Anthropic's Claude Opus 4.6 at significantly lower cost. This wave of competitive releases signals that the global AI race is intensifying, with Chinese labs now matching frontier performance. CTOs serving international markets should be evaluating these models for cost-sensitive deployments.</p>
+            <div class="url"><a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/">blog.mean.ceo</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>2026: The Year AI Research Shifts from Scale to Efficiency</h3>
+            <div class="source">Adaline Labs &bull; March 2026</div>
+            <p>A comprehensive survey of the 2026 AI research landscape identifies a fundamental pivot from "how big can we go" to "how smart can we be efficiently." Key transitions include reasoning distillation bringing o3-level intelligence to edge devices, Google's Nested Learning paradigm solving catastrophic forgetting, and physics-informed machine learning enabling more accurate predictions in climate and fluid dynamics. The era of simply scaling up models may be giving way to architectural innovation.</p>
+            <div class="url"><a href="https://labs.adaline.ai/p/the-ai-research-landscape-in-2026">labs.adaline.ai</a></div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 5 ==================== -->
+    <section>
+        <h2 id="s5">5. Industry Trends, Funding &amp; Regulation</h2>
+
+        <div class="article-entry">
+            <h3>February 2026 Sets VC Record: $189B in One Month, 90% AI-Related</h3>
+            <div class="source">TechCrunch / Crunchbase &bull; March 3, 2026</div>
+            <p>Global venture investment hit $189 billion in February 2026 — the largest single month on record — with AI-related startups capturing 90% of all capital deployed. Three deals dominated: OpenAI ($110B at $730B valuation), Anthropic ($30B Series G at $380B valuation), and Waymo ($16B at $126B valuation). The concentration of capital in a few mega-rounds raises questions about whether the broader startup ecosystem is being starved of funding.</p>
+            <div class="url"><a href="https://techcrunch.com/2026/03/03/openai-anthropic-waymo-dominated-189-billion-vc-investments-february-crunchbase-report/">techcrunch.com</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>Enterprise AI Adoption Hits 78% — But "Pilot Purgatory" Persists</h3>
+            <div class="source">Deloitte / TechRepublic &bull; March 2026</div>
+            <p>Enterprise AI adoption has reached 78% globally according to Deloitte's latest survey, with 86% of respondents reporting budget increases for 2026. Yet a Recon Analytics study of 120,000+ enterprise respondents found only 8.6% of companies have AI agents deployed in production, while 63.7% report no formalized AI initiative at all. The gap between adoption claims and production deployments — dubbed "Pilot Purgatory" — remains the defining challenge for enterprise AI leadership.</p>
+            <div class="url"><a href="https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html">deloitte.com</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>Meta Ties Employee Performance Reviews to AI Usage</h3>
+            <div class="source">Bloomberg (via IBM) &bull; February 2026</div>
+            <p>Meta has become the first major technology company to formally tie employee performance reviews to AI usage, according to Bloomberg. Under the new policy, "AI-driven impact" is a core expectation for every employee across the organization. This move could spark similar mandates at other large enterprises, fundamentally reshaping how companies measure employee contribution and productivity in an AI-first era.</p>
+            <div class="url"><a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026">ibm.com/think/news/ai-tech-trends-predictions-2026</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>EU AI Act: August 2, 2026 Deadline Looms for High-Risk AI Compliance</h3>
+            <div class="source">Wilson Sonsini / SecurePrivacy &bull; March 2026</div>
+            <p>The most critical EU AI Act compliance deadline — August 2, 2026 — is less than five months away, when requirements for high-risk AI systems (employment, credit, education, law enforcement) become enforceable. Penalties are severe: up to €35 million or 7% of global revenue. While a proposed "Digital Omnibus" could push deadlines to December 2027, prudent compliance teams are treating August as firm. Each EU member state must also establish at least one AI regulatory sandbox by the same date.</p>
+            <div class="url"><a href="https://secureprivacy.ai/blog/eu-ai-act-2026-compliance">secureprivacy.ai/blog/eu-ai-act-2026-compliance</a></div>
+        </div>
+
+        <div class="article-entry">
+            <h3>IPO Pipeline Builds: xAI-SpaceX, Databricks, OpenAI, CoreWeave All Targeting 2026</h3>
+            <div class="source">Crunchbase News &bull; March 2026</div>
+            <p>Multiple high-profile AI companies are planning public listings in 2026: xAI-SpaceX is targeting June, Databricks and CoreWeave are aiming for Q2, and OpenAI has its sights on Q4. Perplexity's $38B bid for Chrome remains active but faces regulatory hurdles. Meanwhile, mid-tier AI startups without clear moats — proprietary data, vertical depth, or switching costs — face increasing pressure as enterprises consolidate vendors. A healthy IPO market is expected to increase M&A activity, not reduce it.</p>
+            <div class="url"><a href="https://news.crunchbase.com/venture/2026-tech-startup-trends-ipo-ai-ma/">news.crunchbase.com</a></div>
+        </div>
+    </section>
+
+    <!-- KEY NUMBERS BOX -->
+    <div class="stat-box" style="margin-top:1rem;">
+        <strong>Key Numbers This Week:</strong><br>
+        OpenAI: $25B annualized revenue &bull; 900M weekly active users &bull; $730B valuation<br>
+        Anthropic: $20B ARR &bull; Claude Code $2.5B ARR &bull; $380B valuation<br>
+        Microsoft: 15M paid Copilot seats &bull; 90% Fortune 500 penetration<br>
+        Google: 750M monthly active users &bull; 8M paid enterprise seats<br>
+        Global VC (Feb '26): $189B total &bull; $171B AI-related &bull; 780% YoY increase
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p><strong>Curated for Wiise CTO &mdash; Daily Briefing</strong></p>
+        <p>Generated Sunday, March 15, 2026 &bull; 22 articles across 5 categories</p>
+        <p style="font-size:8pt; margin-top:0.5rem; color:#999;">
+            Sources include TechCrunch, Crunchbase, Axios, Bloomberg, Deloitte, NVIDIA, LogRocket, Anthropic, OpenAI, Google, Microsoft, and others.
+            <br>All summaries are original. Open your browser and press Ctrl+P (or Cmd+P) to print.
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
