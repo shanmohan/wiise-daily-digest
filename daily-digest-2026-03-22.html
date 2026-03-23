@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI &amp; Agentic Tech Daily Digest — March 22, 2026</title>
+    <style>
+        /* ── Reset ── */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ── Screen styles ── */
+        @media screen {
+            body {
+                font-family: Georgia, 'Times New Roman', serif;
+                font-size: 11pt;
+                line-height: 1.6;
+                color: #1a1a1a;
+                background: #f5f5f0;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                background: #ffffff;
+                padding: 2.5rem 3rem;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            }
+            a { color: #1a4d8f; }
+            a:hover { text-decoration: underline; }
+            .section-divider {
+                border: none;
+                border-top: 2px solid #e0e0e0;
+                margin: 2rem 0;
+            }
+        }
+
+        /* ── Print styles ── */
+        @media print {
+            body {
+                font-family: Georgia, 'Times New Roman', serif;
+                font-size: 11pt;
+                line-height: 1.6;
+                color: #000;
+                background: #fff;
+                margin: 2cm;
+            }
+            .container { max-width: 100%; padding: 0; }
+            a { color: #000; }
+            /* Show URLs inline */
+            a[href]::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555; }
+            .no-print { display: none !important; }
+            h2 { page-break-before: always; }
+            h2:first-of-type { page-break-before: avoid; }
+            .article-entry { page-break-inside: avoid; }
+            .toc-section { page-break-inside: avoid; }
+            .section-divider { border-top: 1px solid #999; }
+        }
+
+        /* ── Masthead ── */
+        .masthead {
+            text-align: center;
+            padding: 2rem 0 1.5rem;
+            border-bottom: 3px double #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+        .masthead h1 {
+            font-size: 22pt;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #1a1a1a;
+            margin-bottom: 0.4rem;
+        }
+        .masthead .dateline {
+            font-size: 12pt;
+            font-style: italic;
+            color: #444;
+        }
+        .masthead .subtitle {
+            font-size: 10pt;
+            color: #777;
+            margin-top: 0.25rem;
+        }
+
+        /* ── Table of Contents ── */
+        .toc {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 1.25rem 1.75rem;
+            margin-bottom: 2rem;
+        }
+        .toc h2 {
+            font-size: 13pt;
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.35rem;
+        }
+        .toc ol {
+            padding-left: 1.5rem;
+        }
+        .toc li {
+            padding: 0.25rem 0;
+            font-size: 11pt;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #1a4d8f;
+        }
+        .toc a:hover { text-decoration: underline; }
+        @media print {
+            .toc { background: #fff; }
+            .toc a::after { display: none !important; content: "" !important; }
+        }
+
+        /* ── Section headings ── */
+        h2.section-heading {
+            font-size: 15pt;
+            font-weight: bold;
+            color: #1a1a1a;
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 0.35rem;
+            margin-bottom: 1.25rem;
+            margin-top: 2rem;
+        }
+        h2.section-heading .section-num {
+            font-size: 11pt;
+            font-weight: normal;
+            color: #777;
+            margin-right: 0.5rem;
+        }
+
+        /* ── Article entries ── */
+        .article-entry {
+            margin-bottom: 1.75rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dotted #ccc;
+        }
+        .article-entry:last-child {
+            border-bottom: none;
+        }
+        .article-entry h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 0.2rem;
+            line-height: 1.4;
+        }
+        .article-entry .meta {
+            font-size: 10pt;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        .article-entry p {
+            font-size: 11pt;
+            color: #222;
+            margin-bottom: 0.5rem;
+        }
+        .article-entry .article-url {
+            font-size: 9.5pt;
+            color: #1a4d8f;
+            word-break: break-all;
+        }
+        @media print {
+            .article-entry .article-url { color: #555; }
+            .article-entry .article-url a::after { display: none !important; content: "" !important; }
+        }
+
+        /* ── Footer ── */
+        .footer {
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 2px double #1a1a1a;
+            text-align: center;
+            font-size: 9.5pt;
+            color: #777;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- MASTHEAD -->
+    <div class="masthead">
+        <h1>AI &amp; Agentic Tech Daily Digest</h1>
+        <div class="dateline">Sunday, March 22, 2026</div>
+        <div class="subtitle">Curated for the Wiise CTO &bull; 24 Articles &bull; 6 Categories</div>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="toc toc-section no-print-after">
+        <h2>Table of Contents</h2>
+        <ol>
+            <li><a href="#section-agentic">Agentic AI &amp; Frameworks</a></li>
+            <li><a href="#section-devtools">Developer Tools &amp; Capabilities</a></li>
+            <li><a href="#section-enterprise">Enterprise &amp; Products</a></li>
+            <li><a href="#section-benchmarks">Benchmarks &amp; Research</a></li>
+            <li><a href="#section-trends">Industry Trends &amp; Analysis</a></li>
+            <li><a href="#section-regulation">Regulation, Policy &amp; Compliance</a></li>
+        </ol>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- SECTION 1: AGENTIC AI & FRAMEWORKS -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <h2 class="section-heading" id="section-agentic">
+        <span class="section-num">1.</span> Agentic AI &amp; Frameworks
+    </h2>
+
+    <div class="article-entry">
+        <h3>Definitive Guide to Agentic Frameworks in 2026: LangGraph, CrewAI, AG2, OpenAI and More</h3>
+        <div class="meta">Softmax Data &bull; March 2026</div>
+        <p>LangGraph has reached v1.0.10 GA as the leading choice for complex, stateful agent orchestration, shipping with over 700 integrations and the most mature checkpointing and replay story in the ecosystem. CrewAI hit v1.10.1 in early 2026 with native MCP support, A2A protocol integration, and streaming tool call events added in January. The global AI agent market is estimated at $7.84 billion in 2025 and is projected to reach $52.62 billion by 2030 at a 46.3% CAGR, reflecting the rapid maturation of enterprise agentic deployments.</p>
+        <div class="article-url"><a href="https://softmaxdata.com/blog/definitive-guide-to-agentic-frameworks-in-2026-langgraph-crewai-ag2-openai-and-more/">https://softmaxdata.com/blog/definitive-guide-to-agentic-frameworks-in-2026-langgraph-crewai-ag2-openai-and-more/</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>A Developer's Guide to Agentic Frameworks in 2026: Microsoft Agent Framework Unifies AutoGen and Semantic Kernel</h3>
+        <div class="meta">Towards AI (Medium) &bull; March 2026</div>
+        <p>Microsoft merged AutoGen and Semantic Kernel into a single unified Microsoft Agent Framework, which reached Release Candidate status on February 19, 2026, with General Availability targeted for end of Q1. The framework brings graph-based workflows, full MCP and A2A protocol support, streaming, checkpointing, and human-in-the-loop capabilities to both Python and .NET developers under a single SDK. AutoGen itself is now in maintenance mode, receiving only security patches as all active development migrates to the new unified offering.</p>
+        <div class="article-url"><a href="https://pub.towardsai.net/a-developers-guide-to-agentic-frameworks-in-2026-3f22a492dc3d">https://pub.towardsai.net/a-developers-guide-to-agentic-frameworks-in-2026-3f22a492dc3d</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>Top 7 Agentic AI Frameworks in 2026: Claude Agent SDK, Google ADK, and OpenAI Agents SDK Compared</h3>
+        <div class="meta">AlphaMatch AI &bull; March 2026</div>
+        <p>The Claude Agent SDK (v0.1.48) is positioning itself as the MCP-native development choice with tight lifecycle hooks and in-process server models designed for reliable, observable agent pipelines. Google ADK reached v1.26.0 with multimodal workflows supporting bidirectional audio and video streaming, now available across Python, Java, and Go SDKs. OpenAI's Agents SDK (v0.10.2) supports over 100 non-OpenAI models and remains the fastest path from zero to a functioning agent for developers already in the OpenAI ecosystem.</p>
+        <div class="article-url"><a href="https://www.alphamatch.ai/blog/top-agentic-ai-frameworks-2026">https://www.alphamatch.ai/blog/top-agentic-ai-frameworks-2026</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>MCP Standard Donated to the Linux Foundation, Becomes Ecosystem-Wide Connectivity Layer</h3>
+        <div class="meta">Let's Data Science &bull; March 2026</div>
+        <p>Anthropic's Model Context Protocol (MCP), donated to the Linux Foundation's new Agentic AI Foundation in December 2025, is rapidly becoming the standard connectivity layer for AI agents across all major frameworks. With over 270 MCP servers now publicly available, Google, OpenAI, Anthropic, CrewAI, and Microsoft's Agent Framework all support the protocol natively. Frameworks that adopted MCP early are gaining significant interoperability advantages as the broader ecosystem aligns around this open standard for tool and data connectivity.</p>
+        <div class="article-url"><a href="https://letsdatascience.com/blog/ai-agent-frameworks-compared">https://letsdatascience.com/blog/ai-agent-frameworks-compared</a></div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- SECTION 2: DEVELOPER TOOLS & CAPABILITIES -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <h2 class="section-heading" id="section-devtools">
+        <span class="section-num">2.</span> Developer Tools &amp; Capabilities
+    </h2>
+
+    <div class="article-entry">
+        <h3>I Built the Same App 5 Ways: Claude Code Tops 2026 Developer Satisfaction Rankings</h3>
+        <div class="meta">DEV Community &bull; March 2026</div>
+        <p>Claude Code has taken the top developer satisfaction spot with a 46% "most loved" rating in a head-to-head comparison against Cursor (19%), GitHub Copilot (9%), Windsurf, and Replit Agent — a remarkable shift within a single year of its May 2025 launch. Anthropic shipped Agent Teams in February 2026, enabling multi-agent coordination alongside deep git integration and MCP server support for complex, long-horizon coding tasks. Developers describe Claude Code as the tool they reach for when other AI coding assistants fail on genuinely difficult architectural problems.</p>
+        <div class="article-url"><a href="https://dev.to/paulthedev/i-built-the-same-app-5-ways-cursor-vs-claude-code-vs-windsurf-vs-replit-agent-vs-github-copilot-50m2">https://dev.to/paulthedev/i-built-the-same-app-5-ways-cursor-vs-claude-code-vs-windsurf-vs-replit-agent-vs-github-copilot-50m2</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>AI Coding Agents 2026: Three Distinct Categories Emerge as Market Matures</h3>
+        <div class="meta">Lushbinary &bull; March 2026</div>
+        <p>The AI coding tool landscape has now clearly split into three distinct categories: inline assistants such as GitHub Copilot, autonomous agents including Claude Code and OpenAI Codex, and agentic IDEs like Cursor and Windsurf. Cursor 2.0 now supports up to eight parallel agents, a redesigned multi-agent interface, and Plan Mode with editable Markdown plans that allow developers to review and modify the agent's strategy before execution. Windsurf added Arena Mode for side-by-side model comparisons and first-class parallel multi-agent sessions via Git worktrees, moving firmly into the autonomous agent category.</p>
+        <div class="article-url"><a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>AI Dev Tool Power Rankings March 2026: Developers Average 2.3 Tools as Market Matures</h3>
+        <div class="meta">LogRocket Blog &bull; March 2026</div>
+        <p>GitHub Copilot remains the most widely deployed AI coding tool with 15 million active developers, and the addition of Agent Mode with MCP support has shifted it from a completion assistant toward a true autonomous agent for everyday tasks. Experienced developers in 2026 now use an average of 2.3 AI coding tools simultaneously, suggesting the market is settling into complementary rather than winner-takes-all usage patterns. Claude Code alone is generating a $500 million annualised run rate that grew 10x in three months, underscoring the extraordinary pace of enterprise and developer adoption.</p>
+        <div class="article-url"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">https://blog.logrocket.com/ai-dev-tool-power-rankings/</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>We Tested 15 AI Coding Agents in Production: Only 3 Changed How We Ship</h3>
+        <div class="meta">Morph LLM &bull; March 2026</div>
+        <p>An independent assessment of 15 AI coding tools in real production scenarios found that only Claude Code, Cursor, and one other tool materially improved engineering velocity and output quality, with most tools still falling short on multi-file reasoning and test-and-iterate loops. The report highlights that every serious tool in 2026 is racing toward the autonomous agent category, though many remain closer to sophisticated autocomplete than true agentic capability. Multi-agent collaboration — where one agent plans, one codes, one tests, and one reviews — is identified as the next major frontier, with all leading tools building toward this model.</p>
+        <div class="article-url"><a href="https://www.morphllm.com/ai-coding-agent">https://www.morphllm.com/ai-coding-agent</a></div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- SECTION 3: ENTERPRISE & PRODUCTS -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <h2 class="section-heading" id="section-enterprise">
+        <span class="section-num">3.</span> Enterprise &amp; Products
+    </h2>
+
+    <div class="article-entry">
+        <h3>OpenAI Surpasses $25 Billion Annualised Revenue, Takes Early IPO Steps</h3>
+        <div class="meta">Computerworld &bull; March 2026</div>
+        <p>OpenAI has surpassed $25 billion in annualised revenue and is taking early steps toward a public listing, potentially as soon as late 2026, according to reporting from multiple outlets tracking the company's financials. The company released GPT-5.4 Mini and Nano — its smallest and fastest variants — specifically optimised for coding tasks and subagent use cases in multi-agent pipelines. OpenAI also launched Frontier Alliances, a structured partner program involving Accenture, BCG, Capgemini, and McKinsey to accelerate enterprise deployment, targeting $30 billion in revenue in 2026.</p>
+        <div class="article-url"><a href="https://www.computerworld.com/article/4015023/openai-latest-news-and-insights.html">https://www.computerworld.com/article/4015023/openai-latest-news-and-insights.html</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>Anthropic Launches Claude Sonnet 4.6 and Opus 4.6 with 1M Token Context Window in Beta</h3>
+        <div class="meta">Crescendo AI News &bull; March 2026</div>
+        <p>Anthropic rolled out persistent memory features to all Claude users in early March 2026 and shipped Claude Sonnet 4.6 and Opus 4.6 with a one-million-token context window now in public beta, targeting long-document analysis and deep enterprise workflows. Opus 4.6 has been deployed as a native add-in inside Microsoft PowerPoint and Excel, signalling a deepening Microsoft-Anthropic partnership that has expanded significantly since Microsoft broadened its AI alliances beyond OpenAI. Claude Code is now generating a $500 million ARR growing 10x in three months, with 70–80% of Anthropic's total revenue now originating from enterprise and API customers rather than consumer subscriptions.</p>
+        <div class="article-url"><a href="https://www.crescendo.ai/news/latest-ai-news-and-updates">https://www.crescendo.ai/news/latest-ai-news-and-updates</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>Salesforce Launches Agentforce 360 with Voice Channels and Hybrid Reasoning</h3>
+        <div class="meta">Marqstats &bull; March 2026</div>
+        <p>Salesforce launched Agentforce 360 featuring a unified agent builder, Agentforce Script for hybrid deterministic-LLM reasoning that provides more predictable outcomes, and Agentforce Voice for AI-powered phone, web, and mobile customer service channels. The platform is gaining strong enterprise traction for customer service automation and sales lead qualification, leveraging Salesforce's dominant CRM position to embed AI agents directly into existing workflows. Gartner predicts 40% of enterprise applications will integrate task-specific AI agents by end of 2026, up from under 5% in 2025, a trajectory Salesforce is directly capitalising on.</p>
+        <div class="article-url"><a href="https://marqstats.com/reports/agentic-ai-enterprise-platform-market">https://marqstats.com/reports/agentic-ai-enterprise-platform-market</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>Google Releases Gemini 3.1 Flash-Lite for Cost-Efficient Enterprise AI at Scale</h3>
+        <div class="meta">LLM Stats &bull; March 2026</div>
+        <p>Google introduced Gemini 3.1 Flash-Lite, an efficiency-focused model delivering 2.5x faster response times and 45% faster output generation compared to earlier Gemini versions, with pricing set at just $0.25 per million input tokens — making high-quality AI accessible for high-volume enterprise deployments. Google has also begun standing up managed MCP servers to connect AI agents directly to its full suite of products and services, creating a tightly integrated ecosystem for enterprise customers. The move reflects a broader industry shift toward making frontier AI dramatically more cost-accessible, with pricing pressure from open-weight models forcing proprietary providers to compete aggressively on economics.</p>
+        <div class="article-url"><a href="https://llm-stats.com/ai-news">https://llm-stats.com/ai-news</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>AWS Launches Amazon Connect Health Agentic Suite in 20th Anniversary Strategic Push</h3>
+        <div class="meta">SiliconANGLE &bull; March 2026</div>
+        <p>Amazon Web Services launched Amazon Connect Health, an AI agentic suite designed to better connect patients and healthcare providers with intelligent routing, summarisation, and follow-up capabilities, as part of its 20th anniversary year of expanded strategic AI investment. AWS's broader strategic direction is firmly oriented toward AI agent infrastructure as it competes head-to-head with Azure and Google Cloud for enterprise workloads in regulated industries. Enterprise AI spending reached $37 billion in 2025 per Menlo Ventures, a threefold year-over-year increase with investment split roughly equally between AI software products and AI-specific infrastructure.</p>
+        <div class="article-url"><a href="https://siliconangle.com/2026/03/13/ai-startups-funding-frenzy-aws-goes-next-whats-coming-nvidias-gtc-event/">https://siliconangle.com/2026/03/13/ai-startups-funding-frenzy-aws-goes-next-whats-coming-nvidias-gtc-event/</a></div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- SECTION 4: BENCHMARKS & RESEARCH -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <h2 class="section-heading" id="section-benchmarks">
+        <span class="section-num">4.</span> Benchmarks &amp; Research
+    </h2>
+
+    <div class="article-entry">
+        <h3>AI Model Benchmarks March 2026: No Single Model Leads Across All Axes</h3>
+        <div class="meta">LM Council &bull; March 2026</div>
+        <p>Claude 4.6 Opus leads the SWE-bench coding evaluation at 75.6%, while Gemini 3.1 Pro posted a 77.1% score on ARC-AGI-2 — which tests novel logical problem-solving — and 94.3% on GPQA Diamond for expert-level science questions, topping both Claude and GPT-5 on those benchmarks. February 2026 saw seven major model releases in a single month from Google, Anthropic, OpenAI, xAI, and Alibaba, with benchmark records broken across nearly every category. The competitive landscape is increasingly multi-dimensional, with no single model dominating all tasks, reinforcing the case for teams to benchmark against their specific use case rather than relying on headline numbers.</p>
+        <div class="article-url"><a href="https://lmcouncil.ai/benchmarks">https://lmcouncil.ai/benchmarks</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>GLM-5 and Qwen 3.5 Advance the Open-Source Frontier, Challenging Proprietary Models</h3>
+        <div class="meta">LLM Stats Updates &bull; March 2026</div>
+        <p>Zhipu AI's GLM-5, featuring a 744 billion parameter MoE architecture trained entirely on Huawei Ascend chips with no NVIDIA dependency, has entered the global top 5 and displaced GPT-5.2 on several benchmarks, offering an MIT-licensed open-weight model with competitive self-hosting economics at $1.00/$3.20 per million tokens. Alibaba's Qwen 3.5 supports 201 languages, a one-million-token context window, and is Apache 2.0 licensed at just $0.40/$1.20 per million tokens — a fraction of Western frontier model prices — making it particularly attractive for multilingual enterprise deployments. Open-weight models are now regularly rivalling proprietary alternatives on major benchmarks while providing full flexibility to fine-tune, self-host, and avoid vendor lock-in.</p>
+        <div class="article-url"><a href="https://llm-stats.com/llm-updates">https://llm-stats.com/llm-updates</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>Epoch AI Releases FrontierMath Open Problems Benchmark for Unsolved Mathematical Research</h3>
+        <div class="meta">Epoch AI &bull; January 2026</div>
+        <p>In January 2026, Epoch AI released FrontierMath: Open Problems, a benchmark that tests AI systems on genuinely unsolved mathematical research problems rather than known results that may appear in training data, providing a more reliable measure of reasoning capability. Alongside this, new evaluation frameworks including METR Time Horizon (measuring the task duration at which an AI reaches 50% success) and GDPval (spanning 44 knowledge-work occupations across top U.S. GDP industries) are gaining traction as more meaningful proxies for real-world economic capability. These next-generation benchmarks aim to move the field away from measuring performance on tasks models have likely seen during training, toward quantifying the practical value AI can genuinely create.</p>
+        <div class="article-url"><a href="https://epoch.ai/benchmarks">https://epoch.ai/benchmarks</a></div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- SECTION 5: INDUSTRY TRENDS & ANALYSIS -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <h2 class="section-heading" id="section-trends">
+        <span class="section-num">5.</span> Industry Trends &amp; Analysis
+    </h2>
+
+    <div class="article-entry">
+        <h3>In 2026, AI Will Move from Hype to Pragmatism — TechCrunch Year Outlook</h3>
+        <div class="meta">TechCrunch &bull; January 2026</div>
+        <p>TechCrunch's lead analysis for 2026 argues the industry is transitioning from brute-force scaling and flashy capability demonstrations to targeted deployments, smaller purpose-fit models, and agent workflows that genuinely augment human work rather than merely promise to. The focus is shifting from building ever-larger foundation models toward embedding AI cleanly into physical devices, industrial systems, and human workflows where measurable productivity gains can be demonstrated. "The party isn't over, but the industry is starting to sober up," the piece observes — signalling a maturation phase where ROI accountability is becoming the primary lens for enterprise AI investment.</p>
+        <div class="article-url"><a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/">https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>Four AI Research Trends Enterprise Teams Must Watch in 2026 — VentureBeat</h3>
+        <div class="meta">VentureBeat &bull; March 2026</div>
+        <p>VentureBeat identifies four critical research themes enterprise teams must track in 2026: continual learning without catastrophic forgetting, robust orchestration over raw model performance, AI systems engineering as a distinct discipline from model development, and production-grade reliability techniques that allow enterprises to extract real business value rather than run convincing demos. With 86% of enterprises surveyed reporting that AI budgets will increase in 2026 — nearly 40% by 10% or more — the investment is clearly present; the challenge is translating it into operational outcomes. IBM's Chief Architect of AI Open Innovation captures the moment: "We're going to hit a commodity point on models — it's a buyer's market; what matters now is orchestration."</p>
+        <div class="article-url"><a href="https://venturebeat.com/technology/four-ai-research-trends-enterprise-teams-should-watch-in-2026">https://venturebeat.com/technology/four-ai-research-trends-enterprise-teams-should-watch-in-2026</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>6 Tech and Startup Trends for 2026: IPO Boom, AI Mega-Deals, and the Acqui-Hire Wave</h3>
+        <div class="meta">Crunchbase News &bull; January 2026</div>
+        <p>Four investors surveyed by Crunchbase expect a 10–25% year-over-year increase in venture funding in 2026, with capital concentrating heavily into AI companies, robotics, and defence technology as LPs chase the clearest near-term returns. A major emerging pattern is the "AI acqui-hire": large corporations acquiring seed and Series A teams of fewer than 100 employees for $100 million-plus exits, prioritising talent and IP over revenue scale. OpenAI's anticipated IPO in late 2026 is viewed as a defining liquidity event that could unlock a broader AI-sector IPO wave and reset valuations across the private market.</p>
+        <div class="article-url"><a href="https://news.crunchbase.com/venture/2026-tech-startup-trends-ipo-ai-ma/">https://news.crunchbase.com/venture/2026-tech-startup-trends-ipo-ai-ma/</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>What's Next for AI in 2026: World Models, Embodied AI, and Quantum Milestones — MIT Technology Review</h3>
+        <div class="meta">MIT Technology Review &bull; January 2026</div>
+        <p>MIT Technology Review identifies world models — AI systems that learn how objects move and interact in three-dimensional space to make predictions and take physical actions — as the next major research frontier, with 2026 expected to be a breakthrough year for embodied AI in logistics, warehouse automation, and industrial inspection. The piece also highlights the arrival of reasoning models that can hold extended chains of thought and revisit assumptions, describing them as a meaningful qualitative shift beyond pattern completion. IBM has publicly stated that 2026 will mark the first time a quantum computer outperforms a classical machine on a commercially meaningful task, a milestone the broader AI community is watching closely.</p>
+        <div class="article-url"><a href="https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/">https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/</a></div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- SECTION 6: REGULATION, POLICY & COMPLIANCE -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <h2 class="section-heading" id="section-regulation">
+        <span class="section-num">6.</span> Regulation, Policy &amp; Compliance
+    </h2>
+
+    <div class="article-entry">
+        <h3>EU AI Act August 2026 Deadline: The Most Consequential Near-Term Compliance Milestone for Global Enterprises</h3>
+        <div class="meta">Wilson Sonsini &bull; January 2026</div>
+        <p>The EU AI Act's August 2, 2026 compliance deadline for high-risk AI systems is the single most consequential near-term regulatory milestone for global enterprises operating in or selling to European markets, though the European Commission has proposed extending certain requirements to December 2027 for specific categories. Foundation model providers must publish detailed training data summaries, and enterprise users deploying AI systems must ensure their applications avoid prohibited categories including untargeted facial scraping and social scoring systems. The European Commission is also developing a new Code of Practice specifically addressing the marking and labelling of AI-generated content across digital platforms.</p>
+        <div class="article-url"><a href="https://www.wsgr.com/en/insights/2026-year-in-preview-ai-regulatory-developments-for-companies-to-watch-out-for.html">https://www.wsgr.com/en/insights/2026-year-in-preview-ai-regulatory-developments-for-companies-to-watch-out-for.html</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>Federal vs. State AI Regulation: Trump Executive Order Creates Jurisdictional Conflict for Enterprises</h3>
+        <div class="meta">King &amp; Spalding &bull; January 2026</div>
+        <p>President Trump signed an Executive Order on December 11, 2025 asserting federal primacy over AI regulation and signalling intent to neutralise the expanding patchwork of state AI laws, creating direct legal tension with state legislatures that have already enacted requirements. Colorado's AI Act (SB 24-205), effective June 30, 2026, requires deployers of high-risk AI systems to protect consumers from algorithmic discrimination, while Illinois' HB 3773 prohibits employer use of AI that discriminates against protected classes. Enterprises now face active federal-versus-state jurisdictional conflict with no clear resolution timeline, requiring compliance programs flexible enough to handle both simultaneously while awaiting court rulings on pre-emption.</p>
+        <div class="article-url"><a href="https://www.kslaw.com/news-and-insights/new-state-ai-laws-are-effective-on-january-1-2026-but-a-new-executive-order-signals-disruption">https://www.kslaw.com/news-and-insights/new-state-ai-laws-are-effective-on-january-1-2026-but-a-new-executive-order-signals-disruption</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>AI Redefines Corporate Governance in 2026: SEC Disclosures, Cyber Insurance, and Compliance-as-Code</h3>
+        <div class="meta">Governance Intelligence &bull; March 2026</div>
+        <p>Boards and executive teams are institutionalising AI governance as a core competency in 2026, with the SEC's Investor Advisory Committee recommending enhanced board-level disclosures on AI oversight as part of material cybersecurity risk management filings. The cyber insurance market is conditioning coverage on AI-specific security controls, with insurers introducing "AI Security Riders" that require documented adversarial red-teaming evidence and model-level risk assessments as prerequisites for policy renewal. Gartner predicts 70% of enterprises will integrate compliance-as-code into DevOps toolchains by 2026, aiming to reduce risk management overhead by at least 15% while increasing auditability for regulators.</p>
+        <div class="article-url"><a href="https://www.governance-intelligence.com/regulatory-compliance/how-ai-will-redefine-compliance-risk-and-governance-2026">https://www.governance-intelligence.com/regulatory-compliance/how-ai-will-redefine-compliance-risk-and-governance-2026</a></div>
+    </div>
+
+    <div class="article-entry">
+        <h3>Latest AI Regulations 2026: Inventory, Framework Alignment, and Vendor Liability Are Enterprise Priorities</h3>
+        <div class="meta">Credo AI &bull; March 2026</div>
+        <p>Enterprises in 2026 are advised to inventory all AI assets across the organisation — including shadow AI deployments not sanctioned by IT — and align internal governance processes with either the NIST AI Risk Management Framework or ISO/IEC 42001, the first international AI management systems standard. Updating vendor agreements to shift liability for model hallucinations and intellectual property infringement back to AI providers is now a standard legal recommendation, as the contractual landscape matures. Documenting model development processes, risk assessments, and governance policies is no longer optional: regulators, insurers, and major enterprise customers increasingly treat it as a baseline procurement and compliance requirement.</p>
+        <div class="article-url"><a href="https://www.credo.ai/blog/latest-ai-regulations-update-what-enterprises-need-to-know">https://www.credo.ai/blog/latest-ai-regulations-update-what-enterprises-need-to-know</a></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Curated for Wiise CTO &mdash; Daily Briefing &bull; 24 Articles &bull; 6 Categories</p>
+        <p>Generated Sunday, March 22, 2026 &bull; Powered by Claude</p>
+    </div>
+
+</div>
+</body>
+</html>
