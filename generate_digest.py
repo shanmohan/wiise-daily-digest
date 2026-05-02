@@ -7,7 +7,9 @@ Runs via GitHub Actions on a daily cron schedule.
 
 import anthropic
 import json
+import os
 import re
+import sys
 from datetime import datetime, timezone
 
 def get_today():
@@ -20,6 +22,12 @@ def get_today():
     }
 
 def generate_digest():
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        sys.exit(
+            "ERROR: ANTHROPIC_API_KEY is not set. "
+            "Add it as a repository secret at "
+            "https://github.com/shanmohan/wiise-daily-digest/settings/secrets/actions"
+        )
     client = anthropic.Anthropic()
     today = get_today()
 
@@ -49,7 +57,7 @@ Output ONLY the HTML. No ```html markers. Start with <!DOCTYPE html>."""
 
     # Use Claude with web search
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=16000,
         tools=[{
             "type": "web_search_20250305",
