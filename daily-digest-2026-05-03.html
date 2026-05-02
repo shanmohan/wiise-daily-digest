@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI &amp; Agentic Tech Daily Digest — May 3, 2026</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #1a1a1a;
+            margin: 2cm;
+        }
+        .masthead {
+            text-align: center;
+            border-bottom: 3px double #1a1a1a;
+            padding-bottom: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .masthead h1 {
+            font-size: 26pt;
+            letter-spacing: 1px;
+            margin: 0 0 0.4rem 0;
+            color: #1a1a1a;
+        }
+        .masthead .date {
+            font-style: italic;
+            font-size: 12pt;
+            color: #444;
+        }
+        .masthead .tagline {
+            font-size: 10pt;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+        .toc {
+            background: transparent;
+            border: 1px solid #ccc;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .toc h2 {
+            font-size: 13pt;
+            margin: 0 0 0.6rem 0;
+            color: #1a1a1a;
+        }
+        .toc ol { margin: 0; padding-left: 1.25rem; }
+        .toc li { margin: 0.15rem 0; }
+        .toc a { color: #1a4d8f; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+
+        h2.section-title {
+            font-size: 17pt;
+            color: #1a1a1a;
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 0.4rem;
+            margin: 2.5rem 0 1.25rem 0;
+        }
+        article.entry {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dotted #bbb;
+        }
+        article.entry:last-child { border-bottom: none; }
+        article.entry h3 {
+            font-size: 13pt;
+            color: #1a1a1a;
+            margin: 0 0 0.3rem 0;
+            font-weight: bold;
+        }
+        article.entry .source {
+            font-style: italic;
+            color: #555;
+            font-size: 10pt;
+            margin-bottom: 0.5rem;
+        }
+        article.entry p.summary {
+            margin: 0.4rem 0 0.5rem 0;
+            text-align: justify;
+        }
+        article.entry a.url {
+            font-size: 9.5pt;
+            color: #1a4d8f;
+            word-break: break-all;
+            text-decoration: none;
+        }
+        article.entry a.url:hover { text-decoration: underline; }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #999;
+            text-align: center;
+            font-size: 9pt;
+            color: #666;
+            font-style: italic;
+        }
+
+        @media screen {
+            body {
+                max-width: 800px;
+                margin: 2rem auto;
+                padding: 0 2rem;
+            }
+            article.entry a.url { color: #1a4d8f; }
+        }
+
+        @media print {
+            .no-print { display: none; }
+            body { margin: 1.5cm; font-size: 10.5pt; }
+            article.entry { page-break-inside: avoid; }
+            h2.section-title { page-break-before: always; }
+            h2.section-title:first-of-type { page-break-before: auto; }
+            article.entry a.url::after {
+                content: " (" attr(href) ")";
+                font-size: 8.5pt;
+                color: #555;
+            }
+            article.entry a.url { text-decoration: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="masthead">
+    <h1>AI &amp; Agentic Tech Daily Digest</h1>
+    <div class="date">Sunday, May 3, 2026</div>
+    <div class="tagline">Curated for the Wiise CTO &mdash; Daily Briefing</div>
+</div>
+
+<nav class="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#agentic">Agentic AI &amp; Frameworks</a></li>
+        <li><a href="#devtools">Developer Tools &amp; Capabilities</a></li>
+        <li><a href="#enterprise">Enterprise &amp; Products</a></li>
+        <li><a href="#benchmarks">Benchmarks &amp; Research</a></li>
+        <li><a href="#trends">Industry Trends &amp; Analysis</a></li>
+    </ol>
+</nav>
+
+<h2 class="section-title" id="agentic">1. Agentic AI &amp; Frameworks</h2>
+
+<article class="entry">
+    <h3>Microsoft Releases Open-Source Agent Governance Toolkit</h3>
+    <div class="source">Help Net Security &mdash; April 3, 2026</div>
+    <p class="summary">Microsoft has shipped a seven-package Agent Governance Toolkit available across Python, TypeScript, Rust, Go, and .NET, designed to bolt onto existing agent frameworks rather than replace them. The toolkit hooks directly into LangChain callback handlers, CrewAI task decorators, Google ADK plugins, and the Microsoft Agent Framework middleware pipeline, addressing the audit-trail and policy-enforcement gaps that have stalled enterprise rollouts. For CTOs, this signals that governance is being decoupled from the framework choice, lowering the cost of standardising oversight across mixed-vendor agent estates.</p>
+    <a class="url" href="https://www.helpnetsecurity.com/2026/04/03/microsoft-ai-agent-governance-toolkit/">https://www.helpnetsecurity.com/2026/04/03/microsoft-ai-agent-governance-toolkit/</a>
+</article>
+
+<article class="entry">
+    <h3>LangGraph Overtakes CrewAI as Production Frameworks Consolidate</h3>
+    <div class="source">Fungies.io &mdash; April 2026</div>
+    <p class="summary">A comparative review of the leading agent frameworks in 2026 finds LangGraph passing CrewAI in GitHub stars, driven by enterprise demand for graph-based orchestration that maps cleanly to audit trails and rollback points. The piece positions CrewAI as the accessible on-ramp, LangGraph as the production workhorse, and AutoGen as the prototyping favourite, while OpenAI's Agents SDK and Google ADK have both reached feature parity on core agentic primitives. The implication: framework choice is now less about capability and more about the fit with existing observability and CI/CD investments.</p>
+    <a class="url" href="https://fungies.io/ai-agent-frameworks-comparison-2026-langchain-crewai-autogen/">https://fungies.io/ai-agent-frameworks-comparison-2026-langchain-crewai-autogen/</a>
+</article>
+
+<article class="entry">
+    <h3>2026 MCP Roadmap Targets Enterprise Readiness</h3>
+    <div class="source">Model Context Protocol Blog &mdash; April 2026</div>
+    <p class="summary">The MCP steering group has published its 2026 roadmap focused on transport scalability, agent-to-agent communication, governance maturity, and an explicit Enterprise Readiness initiative covering audit trails, SSO-integrated authentication, and configuration portability. The protocol now logs roughly 97 million monthly SDK downloads with more than 10,000 published servers and native support across Claude, ChatGPT, Gemini, and Microsoft Copilot. Gartner projects that 75% of API gateway vendors will offer MCP support by year-end, effectively cementing it as the integration layer for the next wave of agent infrastructure.</p>
+    <a class="url" href="https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/">https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/</a>
+</article>
+
+<article class="entry">
+    <h3>Why MCP Is Suddenly on Every Executive Agenda</h3>
+    <div class="source">CIO Magazine &mdash; April 2026</div>
+    <p class="summary">CIO walks through why the Model Context Protocol has moved from developer curiosity to board-level conversation in the space of 16 months, with deployments at Block, Bloomberg, Amazon, and hundreds of Fortune 500 firms. The article frames MCP as the connective tissue that lets enterprise agents reach internal systems without bespoke glue code, but warns that production teams keep tripping on the same four issues: audit trails, gateway behaviour, SSO auth, and configuration portability. For CTOs, the practical takeaway is to treat MCP infrastructure decisions with the same rigour as historical API gateway selection.</p>
+    <a class="url" href="https://www.cio.com/article/4136548/why-model-context-protocol-is-suddenly-on-every-executive-agenda.html">https://www.cio.com/article/4136548/why-model-context-protocol-is-suddenly-on-every-executive-agenda.html</a>
+</article>
+
+<h2 class="section-title" id="devtools">2. Developer Tools &amp; Capabilities</h2>
+
+<article class="entry">
+    <h3>Anthropic Introduces Claude Opus 4.7 with Task Budgets and Adaptive Thinking</h3>
+    <div class="source">Anthropic &mdash; April 16, 2026</div>
+    <p class="summary">Anthropic released Claude Opus 4.7 with a 13% absolute lift over Opus 4.6 on a 93-task internal coding benchmark, including four problems that no prior Claude model could solve. Headline features include task budgets that give the model a token countdown across an entire agentic loop, adaptive thinking as the default reasoning mode, a new xhigh effort tier between high and max, and high-resolution image support up to 2576 pixels. Pricing holds at $5 per million input and $25 per million output tokens, and the model is available across Claude products, Bedrock, Vertex AI, and Microsoft Foundry.</p>
+    <a class="url" href="https://www.anthropic.com/news/claude-opus-4-7">https://www.anthropic.com/news/claude-opus-4-7</a>
+</article>
+
+<article class="entry">
+    <h3>Claude Opus 4.7 Goes GA on GitHub Copilot</h3>
+    <div class="source">GitHub Changelog &mdash; April 16, 2026</div>
+    <p class="summary">GitHub has promoted Claude Opus 4.7 to general availability inside Copilot, making it the default frontier option for chat, agent mode, and Copilot Coding Agent across Pro, Business, and Enterprise tiers. The rollout closely mirrors Anthropic's own launch day and underlines how rapidly upstream model upgrades now propagate into the IDE workflow. Coupled with Cursor 3.0's parallel agents, the GA signals that multi-agent coding is moving from preview to mainstream developer kit this quarter.</p>
+    <a class="url" href="https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/">https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/</a>
+</article>
+
+<article class="entry">
+    <h3>The Flat-Rate AI Coding Subscription Era Is Ending</h3>
+    <div class="source">Activated Thinker / Medium &mdash; April 2026</div>
+    <p class="summary">A long-form analysis tracks how GitHub Copilot, Claude Code, and Cursor have all quietly shifted economics in early 2026: Copilot reshaped its individual plans and paused some signups, Anthropic shortened Claude Code's server-side prompt cache from one hour to five minutes, and Cursor moved frontier models behind Max Mode for legacy Team and Enterprise customers. The collective effect is a faster credit burn for power users and a clearer split between casual and heavy workloads. CTOs should expect renewals this year to be priced on actual token consumption rather than seat-based estimates.</p>
+    <a class="url" href="https://medium.com/activated-thinker/the-flat-rate-ai-coding-subscription-era-is-ending-what-github-copilot-claude-code-and-cursor-9763e043a63a">https://medium.com/activated-thinker/the-flat-rate-ai-coding-subscription-era-is-ending-what-github-copilot-claude-code-and-cursor-9763e043a63a</a>
+</article>
+
+<article class="entry">
+    <h3>April 2026 Release Notes: 30+ Claude Code Drops, Cursor 3.0, Copilot CLI 1.0.23</h3>
+    <div class="source">Fazm Blog &mdash; April 2026</div>
+    <p class="summary">A consolidated changelog tracks an unusually busy month: Claude Code shipped more than 30 releases in five weeks, Cursor pushed version 3.0 with parallel agent support, and the GitHub Copilot CLI hit 1.0.23 with new agent modes. Claude Code now reportedly leads SWE-bench Verified at 80.9% on Opus 4.5 and is credited with 42% of enterprise coding workloads, the largest single share. The cadence reinforces that AI coding tools are now competing on weekly velocity, not quarterly headline features.</p>
+    <a class="url" href="https://fazm.ai/blog/ai-developer-tools-release-notes-changelog-april-2026">https://fazm.ai/blog/ai-developer-tools-release-notes-changelog-april-2026</a>
+</article>
+
+<h2 class="section-title" id="enterprise">3. Enterprise &amp; Products</h2>
+
+<article class="entry">
+    <h3>Microsoft and OpenAI Drop Cloud Exclusivity</h3>
+    <div class="source">Interesting Engineering &mdash; April 2026</div>
+    <p class="summary">OpenAI and Microsoft have formally dissolved the cloud exclusivity clauses that defined their original partnership, freeing OpenAI to offer products and services across every major cloud while Azure remains the primary partner through 2032. The restructured deal preserves Microsoft's access to OpenAI models and revenue share but removes a long-standing distribution chokepoint. Within 24 hours of the announcement, AWS launched three new OpenAI offerings on Bedrock, including a jointly built managed agent service.</p>
+    <a class="url" href="https://interestingengineering.com/ai-robotics/microsoft-openai-partnership-restructuring">https://interestingengineering.com/ai-robotics/microsoft-openai-partnership-restructuring</a>
+</article>
+
+<article class="entry">
+    <h3>OpenAI Models Land on AWS Bedrock</h3>
+    <div class="source">TechCrunch &mdash; April 28, 2026</div>
+    <p class="summary">Amazon has begun offering OpenAI's frontier models on AWS Bedrock, including GPT-5.5, with Codex now also available on AWS and a new Bedrock Managed Agents service powered by OpenAI. The move follows a $38 billion, seven-year compute commitment OpenAI signed with AWS in November 2025 and ends years of Azure-only availability. For enterprises with AWS-anchored data and IAM, this materially reduces the friction of running OpenAI workloads under existing security perimeters.</p>
+    <a class="url" href="https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/">https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/</a>
+</article>
+
+<article class="entry">
+    <h3>Salesforce and Google Cloud Wire Agentforce into Gemini Enterprise</h3>
+    <div class="source">Salesforce Press &mdash; April 22, 2026</div>
+    <p class="summary">Salesforce and Google Cloud announced deep two-way integration between Agentforce and Gemini Enterprise, letting AI agents act across Slack, Google Workspace, and the Salesforce CRM with shared context. Agentforce Sales agents can now engage leads, build meeting briefs, surface deal risks, and update pipeline directly from inside Gemini Enterprise. The pact is a clear bid to commoditise the underlying model layer while making the orchestration and data-grounding layer the lock-in point.</p>
+    <a class="url" href="https://www.salesforce.com/news/press-releases/2026/04/22/salesforce-google-cloud-launch-new-integrations-deep-context/">https://www.salesforce.com/news/press-releases/2026/04/22/salesforce-google-cloud-launch-new-integrations-deep-context/</a>
+</article>
+
+<article class="entry">
+    <h3>Salesforce Launches Agentforce Operations for the Back Office</h3>
+    <div class="source">Salesforce News &mdash; April 29, 2026</div>
+    <p class="summary">Agentforce Operations went generally available this week, extending Salesforce's agentic platform from front-office customer interactions into finance, HR, and supply-chain processes. The product targets the long tail of internal approval, reconciliation, and exception-handling workflows that have historically required RPA scripts or human review. Salesforce is positioning Operations as the answer to the well-documented gap between AI pilots and durable production value, an issue echoed in industry research showing only 11&ndash;14% of agent pilots reach scale.</p>
+    <a class="url" href="https://www.salesforce.com/news/stories/agentforce-operations-announcement/">https://www.salesforce.com/news/stories/agentforce-operations-announcement/</a>
+</article>
+
+<article class="entry">
+    <h3>NVIDIA Launches Enterprise AI Agent Platform with 17 Adopters</h3>
+    <div class="source">VentureBeat &mdash; April 2026</div>
+    <p class="summary">At GTC 2026, NVIDIA unveiled an enterprise AI agent platform with 17 launch partners including Adobe, Salesforce, and SAP. The package bundles open-source models, the NVIDIA Agent Toolkit, and an OpenShell runtime that enforces policy-based security and privacy guardrails for agent deployments. The pitch is that enterprises get a vendor-neutral substrate for agentic workloads while still benefiting from CUDA-tuned performance, an attractive proposition for buyers wary of cloud lock-in.</p>
+    <a class="url" href="https://venturebeat.com/technology/nvidia-launches-enterprise-ai-agent-platform-with-adobe-salesforce-sap-among">https://venturebeat.com/technology/nvidia-launches-enterprise-ai-agent-platform-with-adobe-salesforce-sap-among</a>
+</article>
+
+<h2 class="section-title" id="benchmarks">4. Benchmarks &amp; Research</h2>
+
+<article class="entry">
+    <h3>OpenAI Releases GPT-5.5, Six Weeks After GPT-5.4</h3>
+    <div class="source">OpenAI &mdash; April 23, 2026</div>
+    <p class="summary">OpenAI launched GPT-5.5 just six weeks after GPT-5.4, billing it as the smartest and most intuitive model the company has shipped to date and rolling it out to ChatGPT Plus, Pro, Business, and Enterprise plus Codex on day one. The model targets multi-step tasks across writing and debugging code, online research, document and spreadsheet creation, and tool use, with a 1M-token context window through the Responses and Chat Completions APIs at $5 / $30 per million input/output tokens. The compressed release cycle underscores how aggressively the frontier labs are now competing for enterprise mindshare.</p>
+    <a class="url" href="https://openai.com/index/introducing-gpt-5-5/">https://openai.com/index/introducing-gpt-5-5/</a>
+</article>
+
+<article class="entry">
+    <h3>OpenAI Pushes GPT-5.5 Toward an AI 'Super App'</h3>
+    <div class="source">TechCrunch &mdash; April 23, 2026</div>
+    <p class="summary">TechCrunch frames GPT-5.5 as another step toward OpenAI's stated ambition of an AI 'super app', citing 4 million active Codex users, 9 million paying business ChatGPT seats, and over 900 million weekly active users. The article argues the velocity gap between OpenAI's release cadence and most enterprises' procurement cycles is now the binding constraint on adoption, not capability. For CTOs, that argues for shorter, model-agnostic contracts and abstracting model selection behind an internal gateway.</p>
+    <a class="url" href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/">https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/</a>
+</article>
+
+<article class="entry">
+    <h3>Stanford AI Index 2026 Charts Industry's Centre of Gravity</h3>
+    <div class="source">IEEE Spectrum &mdash; April 2026</div>
+    <p class="summary">Stanford's annual AI Index for 2026 documents a clear shift in the centre of gravity from research labs to commercial deployment, with industry now producing the overwhelming majority of notable models and capturing most of the headline benchmark gains. The report highlights narrowing gaps between proprietary frontier models and leading open-source releases, including Llama 4 Scout's 10M-token context window. It also flags rising compute concentration and energy demand as the dominant systemic risks for the year ahead.</p>
+    <a class="url" href="https://spectrum.ieee.org/state-of-ai-index-2026">https://spectrum.ieee.org/state-of-ai-index-2026</a>
+</article>
+
+<article class="entry">
+    <h3>Best AI Models April 2026 Ranked by Benchmarks</h3>
+    <div class="source">Build Fast With AI &mdash; April 2026</div>
+    <p class="summary">A side-by-side benchmark roundup places GPT-5.4 and Gemini 3.1 Pro tied at the top of the Artificial Analysis Intelligence Index with scores of 57, while Claude Opus 4.6 leads on coding workloads and Gemini 3.1 Pro continues to dominate multi-task reasoning. GPT-5.4 'Thinking' scored 83.0% on the GDPVal economic-task benchmark, putting it at or above the level of human experts on that suite. The analysis underlines that no single model wins across the board, reinforcing the case for routing infrastructure that selects per-task.</p>
+    <a class="url" href="https://www.buildfastwithai.com/blogs/best-ai-models-april-2026">https://www.buildfastwithai.com/blogs/best-ai-models-april-2026</a>
+</article>
+
+<article class="entry">
+    <h3>Vellum LLM Leaderboard: Live Tracker for the Frontier</h3>
+    <div class="source">Vellum &mdash; April 2026</div>
+    <p class="summary">Vellum's continuously updated leaderboard now tracks GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro, Grok 4.20 Beta 2, and Llama 4 across reasoning, coding, math, and tool-use suites, with versioned snapshots that make month-over-month regressions visible. The site has become a de facto reference for procurement teams comparing total cost of intelligence rather than headline benchmarks alone. For CTOs, it is a practical addition to vendor-evaluation playbooks alongside internal eval harnesses.</p>
+    <a class="url" href="https://www.vellum.ai/llm-leaderboard">https://www.vellum.ai/llm-leaderboard</a>
+</article>
+
+<h2 class="section-title" id="trends">5. Industry Trends &amp; Analysis</h2>
+
+<article class="entry">
+    <h3>PwC: 20% of Companies Capture 75% of AI's Economic Gains</h3>
+    <div class="source">PwC &mdash; 2026</div>
+    <p class="summary">PwC's 2026 AI Performance Study finds that three-quarters of AI's economic upside is being captured by just 20% of companies, with leaders prioritising growth and new revenue rather than narrow productivity wins. The report attributes the gap to differences in operating-model redesign, data foundations, and willingness to put agents in front of customers, not raw model spend. The implication for laggards is that closing the gap is now an organisational problem more than a technology one.</p>
+    <a class="url" href="https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html">https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html</a>
+</article>
+
+<article class="entry">
+    <h3>Morgan Stanley: AI Buildout, Investment, and Risks for 2026</h3>
+    <div class="source">Morgan Stanley &mdash; 2026</div>
+    <p class="summary">Morgan Stanley's AI Market Trends 2026 lays out the financial picture behind the buildout, with Q1 venture funding hitting record highs and the bulk of capital now flowing toward infrastructure clusters rather than application startups. The bank highlights concentrated supplier risk, energy availability, and execution risk on multi-year compute commitments as the issues most likely to reshape valuations in the second half. CTOs should read it alongside their own infrastructure forecasts to test resilience assumptions.</p>
+    <a class="url" href="https://www.morganstanley.com/insights/articles/ai-market-trends-institute-2026">https://www.morganstanley.com/insights/articles/ai-market-trends-institute-2026</a>
+</article>
+
+<article class="entry">
+    <h3>NVIDIA State of AI 2026: Productivity, Revenue and Cost Levers</h3>
+    <div class="source">NVIDIA Blog &mdash; April 2026</div>
+    <p class="summary">NVIDIA's State of AI 2026 report breaks down how AI is driving revenue, cutting costs, and lifting productivity across financial services, healthcare, manufacturing, retail, and the public sector. Eighty-six percent of surveyed organisations say their AI budgets will rise this year, with telecommunications (48%) and retail/CPG (47%) leading agentic AI adoption. The piece reads as a useful counterweight to the more sceptical pilot-failure narratives by quantifying where deployments are sticking.</p>
+    <a class="url" href="https://blogs.nvidia.com/blog/state-of-ai-report-2026/">https://blogs.nvidia.com/blog/state-of-ai-report-2026/</a>
+</article>
+
+<article class="entry">
+    <h3>EU AI Act: 90-Odd Days to the August 2 Deadline</h3>
+    <div class="source">ComplianceHub Wiki &mdash; April 2026</div>
+    <p class="summary">With the August 2, 2026 deadline for high-risk AI systems now under three months out, this guide walks enterprises through what must be in place: completed conformity assessments, finalised technical documentation, CE marking, and EU database registration. The European Commission's proposed Digital Omnibus could push some Annex III obligations to December 2027, but counsel is unanimous that prudent organisations should treat August as binding. Penalties top out at &euro;35M or 7% of global turnover, whichever is higher, making this the highest-stakes compliance deadline of the year for AI deployers.</p>
+    <a class="url" href="https://compliancehub.wiki/eu-ai-act-august-2026-deadline-high-risk-compliance-guide/">https://compliancehub.wiki/eu-ai-act-august-2026-deadline-high-risk-compliance-guide/</a>
+</article>
+
+<article class="entry">
+    <h3>Wilson Sonsini: 2026 AI Regulatory Year in Preview</h3>
+    <div class="source">Wilson Sonsini &mdash; 2026</div>
+    <p class="summary">Wilson Sonsini's regulatory preview spans the EU AI Act, sectoral US regulation, and emerging frameworks in the UK and Asia-Pacific, with particular attention to how privacy, copyright, and product-liability regimes are now interacting with AI deployment. The firm flags increasing enforcement appetite around training-data provenance and the growing role of regulator-run sandboxes as the de facto path to compliance for novel use cases. CTOs should bookmark it as a baseline for cross-jurisdictional planning.</p>
+    <a class="url" href="https://www.wsgr.com/en/insights/2026-year-in-preview-ai-regulatory-developments-for-companies-to-watch-out-for.html">https://www.wsgr.com/en/insights/2026-year-in-preview-ai-regulatory-developments-for-companies-to-watch-out-for.html</a>
+</article>
+
+<article class="entry">
+    <h3>Q1 2026 Shatters Venture Funding Records on AI Boom</h3>
+    <div class="source">Crunchbase News &mdash; April 2026</div>
+    <p class="summary">Global startup funding hit roughly $300B in Q1 2026, a record-shattering quarter driven almost entirely by AI infrastructure and agentic AI, with the latter category up 142.6% year over year. Notable agentic rounds include Rogo's $160M Series D for financial-services agents, PolyAI's $86M Series D for voice customer service, and Parallel Web Systems' $100M Series B at a $2B valuation for AI-agent web infrastructure. Insight Partners, Accel, and Y Combinator are now the most active backers in the space, each with four or more disclosed deals.</p>
+    <a class="url" href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/">https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/</a>
+</article>
+
+<div class="footer">
+    <p>Curated for Wiise CTO &mdash; Daily Briefing | Generated May 3, 2026</p>
+</div>
+
+</body>
+</html>
