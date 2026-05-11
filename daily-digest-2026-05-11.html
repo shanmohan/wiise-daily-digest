@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI &amp; Agentic Tech Daily Digest — Monday, May 11, 2026</title>
+<style>
+  /* ── Base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f9f8f6;
+    padding: 2cm;
+  }
+
+  /* ── Screen layout ── */
+  @media screen {
+    body { max-width: 800px; margin: 0 auto; background: #f9f8f6; }
+    a { color: #1a3a6b; text-decoration: underline; }
+    a:hover { color: #0d2244; }
+  }
+
+  /* ── Print ── */
+  @media print {
+    body { background: #fff; padding: 1.5cm 2cm; font-size: 10.5pt; color: #000; }
+    a { color: #000; text-decoration: none; }
+    a::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555; word-break: break-all; }
+    .url { display: none; }
+    h2 { page-break-before: always; }
+    h2.first-section { page-break-before: avoid; }
+    article { page-break-inside: avoid; }
+    .toc { page-break-inside: avoid; }
+    .masthead { page-break-inside: avoid; }
+  }
+
+  /* ── Masthead ── */
+  .masthead {
+    border-top: 4px solid #1a3a6b;
+    border-bottom: 2px solid #1a3a6b;
+    padding: 18px 0 14px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .masthead h1 {
+    font-family: Georgia, serif;
+    font-size: 22pt;
+    font-weight: bold;
+    color: #1a3a6b;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .masthead .date-line {
+    font-size: 10pt;
+    color: #555;
+    font-style: italic;
+    letter-spacing: 0.3px;
+  }
+  .masthead .tagline {
+    font-size: 9pt;
+    color: #888;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ── Table of Contents ── */
+  .toc {
+    background: #eef2f8;
+    border-left: 4px solid #1a3a6b;
+    padding: 16px 20px;
+    margin-bottom: 36px;
+    border-radius: 0 4px 4px 0;
+  }
+  .toc h2 {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #1a3a6b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    page-break-before: avoid !important;
+  }
+  .toc ol {
+    margin-left: 18px;
+  }
+  .toc ol li {
+    margin-bottom: 4px;
+    font-size: 10.5pt;
+  }
+  .toc ol li a {
+    color: #1a3a6b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .toc ol li a:hover { text-decoration: underline; }
+  .toc ol li span {
+    color: #555;
+    font-size: 9.5pt;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  /* ── Section headings ── */
+  h2.section-head {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #fff;
+    background: #1a3a6b;
+    padding: 8px 14px;
+    margin: 36px 0 20px;
+    border-radius: 3px;
+    letter-spacing: 0.3px;
+  }
+  h2.section-head .section-num {
+    opacity: 0.7;
+    font-size: 11pt;
+    margin-right: 6px;
+  }
+
+  /* ── Articles ── */
+  article {
+    background: #fff;
+    border: 1px solid #dde3ed;
+    border-left: 4px solid #4a72b8;
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    border-radius: 0 4px 4px 0;
+  }
+  article h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #1a3a6b;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  article .source-line {
+    font-style: italic;
+    font-size: 9.5pt;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  article p {
+    font-size: 10.5pt;
+    color: #222;
+    line-height: 1.65;
+  }
+  .url {
+    margin-top: 8px;
+    font-size: 8.5pt;
+    word-break: break-all;
+  }
+  .url a {
+    color: #2a5aaa;
+  }
+
+  /* ── Footer ── */
+  footer {
+    border-top: 2px solid #1a3a6b;
+    margin-top: 40px;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    font-style: italic;
+    letter-spacing: 0.3px;
+  }
+
+  /* ── Divider ── */
+  .section-divider {
+    border: none;
+    border-top: 1px solid #ccd4e0;
+    margin: 10px 0 18px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     MASTHEAD
+════════════════════════════════════════════ -->
+<header class="masthead">
+  <h1>AI &amp; Agentic Tech Daily Digest</h1>
+  <div class="date-line">Monday, May 11, 2026</div>
+  <div class="tagline">Agentic AI · Developer Tools · Enterprise · Benchmarks · Industry Trends</div>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     TABLE OF CONTENTS
+════════════════════════════════════════════ -->
+<nav class="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#section1">Agentic AI &amp; Frameworks</a> <span>— LangGraph, CrewAI, AutoGen, Google ADK, A2A Protocol</span></li>
+    <li><a href="#section2">Developer Tools &amp; Capabilities</a> <span>— Claude Code, Cursor, Windsurf, GitHub Copilot, Codex</span></li>
+    <li><a href="#section3">Enterprise &amp; Products</a> <span>— OpenAI, Anthropic, Google Cloud Next, Pentagon AI Deals</span></li>
+    <li><a href="#section4">Benchmarks &amp; Research</a> <span>— GPT-5.5, Claude Mythos, Opus 4.7, Stanford AI Index 2026</span></li>
+    <li><a href="#section5">Industry Trends &amp; Analysis</a> <span>— Enterprise adoption, regulation, AI labour market, governance</span></li>
+  </ol>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 1 — AGENTIC AI & FRAMEWORKS
+════════════════════════════════════════════ -->
+<section id="section1">
+  <h2 class="section-head first-section"><span class="section-num">01 /</span> Agentic AI &amp; Frameworks</h2>
+
+  <article>
+    <h3>LangGraph Consolidates as the Enterprise Standard for Production Agent Workflows</h3>
+    <p class="source-line">NxCode / AgileSoftLabs — March–April 2026</p>
+    <p>By early 2026 the agent framework landscape has effectively consolidated around two dominant players: LangGraph (via LangChain) and CrewAI, with Microsoft's AutoGen rebranded as the Microsoft Agent Framework holding ground in Azure-centric shops. LangGraph surpassed CrewAI in GitHub stars during 2026, driven by enterprise demand for durable, auditable, long-running workflows with precise state management and checkpoint-based recovery. For regulated industries such as banking and healthcare, LangGraph's directed graph model and LangSmith observability stack have become the go-to production runtime, while CrewAI retains a strong foothold for rapid prototyping thanks to its minimal-boilerplate, role-based crew abstractions.</p>
+    <div class="url">🔗 <a href="https://www.nxcode.io/resources/news/crewai-vs-langchain-ai-agent-framework-comparison-2026" target="_blank">https://www.nxcode.io/resources/news/crewai-vs-langchain-ai-agent-framework-comparison-2026</a></div>
+  </article>
+
+  <article>
+    <h3>Google's A2A Protocol Reaches v1.2 and 150 Organisations in Production</h3>
+    <p class="source-line">The Next Web — April 2026 (Google Cloud Next 2026 coverage)</p>
+    <p>Google's Agent-to-Agent (A2A) protocol, originally launched with 50-plus technology partners, has now reached 150 organisations running real workloads in production — not pilots — routing tasks between agents built on different frameworks including LangGraph and CrewAI. The protocol has graduated to v1.2, is now governed by the Linux Foundation's Agentic AI Foundation, and features cryptographic signed agent cards for domain verification. Major cloud and enterprise vendors including Microsoft, AWS, Salesforce, SAP, and ServiceNow are all running A2A in production, complementing rather than competing with Anthropic's Model Context Protocol (MCP), which handles tool and data-source connectivity while A2A handles cross-platform agent-to-agent communication.</p>
+    <div class="url">🔗 <a href="https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era" target="_blank">https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era</a></div>
+  </article>
+
+  <article>
+    <h3>Anthropic Expands Public Beta for Multi-Agent Orchestration and Sub-Agent Coordination</h3>
+    <p class="source-line">MarketingProfs / Anthropic — May 8, 2026</p>
+    <p>Anthropic this week expanded public beta access to tools that allow Claude agents to coordinate sub-agents and evaluate their own work using rubric-based outcomes, part of a broader push toward increasingly self-managing AI systems capable of handling long-running autonomous workflows in coding, finance, and legal domains. The capability, initially launching as a research preview, reflects Anthropic's long-term vision that autonomous agentic operations will become a primary competitive differentiator in enterprise AI. For CTOs, this signals that production-grade agent pipelines orchestrating multiple specialised Claude sub-agents are now a near-term architectural reality rather than a future aspiration.</p>
+    <div class="url">🔗 <a href="https://www.marketingprofs.com/opinions/2026/54655/ai-update-may-8-2026-ai-news-and-views-from-the-past-week" target="_blank">https://www.marketingprofs.com/opinions/2026/54655/ai-update-may-8-2026-ai-news-and-views-from-the-past-week</a></div>
+  </article>
+
+  <article>
+    <h3>AutoGen v0.4.5 and the Convergence of Conversational Multi-Agent Systems</h3>
+    <p class="source-line">DasRoot / AgileSoftLabs — April 2026</p>
+    <p>Microsoft's AutoGen has reached stable version v0.4.5, now operating under the umbrella of the Microsoft Agent Framework, with its event-driven, async-first architecture making it the preferred runtime for conversational multi-agent systems in Azure-centric enterprise environments. Benchmarks across a 10-step research pipeline show AutoGen's GroupChat coordination pattern excels in quality-sensitive, offline workflows, while its higher token overhead (averaging 24,200 tokens per run) and resource footprint make it less suitable for high-volume, real-time scenarios than LangGraph. The broader 2026 pattern is clear: most mature enterprise production systems now combine frameworks — using LangGraph for state orchestration and AutoGen or CrewAI for specialist agent collaboration layers — rather than committing to a single stack.</p>
+    <div class="url">🔗 <a href="https://dasroot.net/posts/2026/04/llm-agent-frameworks-langchain-crewai-autogen-comparison/" target="_blank">https://dasroot.net/posts/2026/04/llm-agent-frameworks-langchain-crewai-autogen-comparison/</a></div>
+  </article>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 2 — DEVELOPER TOOLS & CAPABILITIES
+════════════════════════════════════════════ -->
+<section id="section2">
+  <h2 class="section-head"><span class="section-num">02 /</span> Developer Tools &amp; Capabilities</h2>
+
+  <article>
+    <h3>Claude Code Passes $1B ARR and Leads SWE-Bench with 80.8% — But Costs Signal Enterprise Trade-offs</h3>
+    <p class="source-line">Kanerika / Medium — April 2026</p>
+    <p>Claude Code has hit a $1 billion annualised run rate within six months of its launch and now leads the SWE-bench Verified benchmark with an 80.8% score — significantly ahead of Cursor's estimated 65% — cementing its position as the preferred autonomous coding agent for hard engineering problems. Enterprise teams favour it for its 1-million-token context window (enabling full-repository reasoning), SOC 2 Type II compliance, and API-level commitments that prevent code from being used in model training. However, its cost profile is non-trivial: heavy usage for a five-developer team runs $250–$500 per month on API billing or $500 per month on the Max plan, which means procurement and ROI conversations are becoming routine in enterprise AI rollouts.</p>
+    <div class="url">🔗 <a href="https://medium.com/@kanerika/github-copilot-vs-claude-code-vs-cursor-vs-windsurf-2026-c54f8a5cc051" target="_blank">https://medium.com/@kanerika/github-copilot-vs-claude-code-vs-cursor-vs-windsurf-2026-c54f8a5cc051</a></div>
+  </article>
+
+  <article>
+    <h3>GitHub Copilot Moves to Usage-Based Billing from June 1 — and Added Agent Mode in March</h3>
+    <p class="source-line">Fungies.io / Havoptic — May 2026</p>
+    <p>GitHub Copilot is switching from flat-fee, request-based billing to token-consumption-based pricing using GitHub AI Credits effective June 1, 2026 — a structural change that could lower costs for light users while significantly increasing bills for heavy users running complex agentic workflows. The shift comes alongside Copilot's own addition of an agent mode in March 2026, narrowing the capability gap with Cursor and Windsurf, and the Claude Code CLI reaching v1.0.42 (released May 6) with a raft of usability improvements including MCP server diagnostics and faster startup. With 20 million-plus users and deep integration into existing Microsoft enterprise agreements, Copilot retains its position as the lowest-friction enterprise entry point, but the pricing model change warrants immediate attention from engineering budget owners.</p>
+    <div class="url">🔗 <a href="https://fungies.io/best-ai-coding-tools-2026-comparison/" target="_blank">https://fungies.io/best-ai-coding-tools-2026-comparison/</a></div>
+  </article>
+
+  <article>
+    <h3>Cursor vs. Windsurf: The Two-IDE Race Reshaping Professional Developer Workflows</h3>
+    <p class="source-line">NxCode / Dev.to — February–March 2026</p>
+    <p>Cursor, with over one million users and 360,000 paying customers, remains the benchmark for professional AI-native IDE experiences, offering multi-file Composer refactoring, flexible model selection (Claude, GPT-5, Gemini), and the largest community ecosystem. Windsurf, now backed by OpenAI following its 2025 acquisition of Codeium, provides comparable Cascade-based agentic editing at $15 per month versus Cursor's $20, with a genuinely usable free tier and FedRAMP High certification that gives it an edge in government and highly regulated environments. The emerging consensus among senior developers is a hybrid workflow: Cursor or Windsurf for daily IDE editing and inline completions, with Claude Code invoked via terminal for large-scale refactoring, security audits, or multi-agent parallel task execution.</p>
+    <div class="url">🔗 <a href="https://www.nxcode.io/resources/news/cursor-vs-windsurf-vs-claude-code-2026" target="_blank">https://www.nxcode.io/resources/news/cursor-vs-windsurf-vs-claude-code-2026</a></div>
+  </article>
+
+  <article>
+    <h3>OpenAI GPT-5.5 Instant Becomes ChatGPT Default; Codex Coding Agent Hits 3 Million Weekly Users</h3>
+    <p class="source-line">CNBC / Blog.greeden.me — May 5–7, 2026</p>
+    <p>OpenAI updated ChatGPT's default model to GPT-5.5 Instant on May 5, 2026, making the improved accuracy and personalisation features available to all users and via the API as <em>chat-latest</em>. Separately, OpenAI's Codex coding agent has reached three million weekly active users, with the company recruiting Cognizant and CGI as systems-integrator partners to push Codex into large enterprise software shops — part of a broader move where enterprise revenue now accounts for 40% of OpenAI's total. The week also saw OpenAI roll out GPT-5.5-Cyber in limited preview to vetted cybersecurity teams, trained to be more permissive on security-related tasks in a direct response to Anthropic's Claude Mythos announcement the previous month.</p>
+    <div class="url">🔗 <a href="https://www.cnbc.com/2026/05/07/openai-rolls-out-new-gpt-5point5-cyber-to-vetted-cybersecurity-teams.html" target="_blank">https://www.cnbc.com/2026/05/07/openai-rolls-out-new-gpt-5point5-cyber-to-vetted-cybersecurity-teams.html</a></div>
+  </article>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 3 — ENTERPRISE & PRODUCTS
+════════════════════════════════════════════ -->
+<section id="section3">
+  <h2 class="section-head"><span class="section-num">03 /</span> Enterprise &amp; Products</h2>
+
+  <article>
+    <h3>OpenAI and Anthropic Both Launch Enterprise AI Services Joint Ventures Worth Billions</h3>
+    <p class="source-line">TechCrunch / CIO.com — May 4–6, 2026</p>
+    <p>In a landmark signal that pure model licensing is no longer sufficient for enterprise capture, both OpenAI and Anthropic announced parallel joint ventures this week targeting hands-on enterprise deployment services. OpenAI's venture, called The Development Company, is raising $4 billion from 19 investors including TPG, Brookfield, Advent, and Bain Capital at a $10 billion valuation, while Anthropic's competing initiative — backed by Blackstone, Hellman &amp; Friedman, and Goldman Sachs — secured approximately $1.5 billion to embed Claude into mid-sized businesses' core operations. Both companies are targeting the gap between AI experimentation and production, recognising that data integration, workflow customisation, governance, and operational implementation require a services layer that traditional SaaS cannot provide.</p>
+    <div class="url">🔗 <a href="https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/" target="_blank">https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/</a></div>
+  </article>
+
+  <article>
+    <h3>Google Cloud Next 2026: Vertex AI Rebranded, ADK v1.0 Stable, and Workspace Studio Launches</h3>
+    <p class="source-line">The Next Web — April/May 2026</p>
+    <p>Google used Cloud Next 2026 to execute a sweeping consolidation of its AI platform, renaming Vertex AI to the Gemini Enterprise Agent Platform and absorbing Agentspace into a unified Gemini Enterprise product. Key announcements include the stable release of ADK v1.0 across four programming languages, a no-code Workspace Studio agent builder, 200-plus models available in the Model Garden (including Anthropic Claude), and managed MCP servers with Apigee as an API-to-agent bridge. Google is betting that vertical integration — owning the model, the runtime, the custom silicon, and the Workspace distribution channel — gives it a structural advantage that neither OpenAI nor AWS can replicate, even as it sits in third place on overall cloud market share behind AWS and Azure.</p>
+    <div class="url">🔗 <a href="https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era" target="_blank">https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era</a></div>
+  </article>
+
+  <article>
+    <h3>Pentagon Inks AI Deals with Eight Big Tech Firms — Anthropic Notably Absent Amid Ongoing Dispute</h3>
+    <p class="source-line">CNN Business — May 1, 2026</p>
+    <p>The US Department of Defense signed AI agreements with eight technology companies — SpaceX, OpenAI, Google, Microsoft, Nvidia, Amazon Web Services, Oracle, and Reflection — as part of a defence AI push funded by last year's One Big Beautiful Bill Act. Anthropic was conspicuously excluded, having been labelled a "supply chain risk" by the Trump administration after refusing terms that would allow Claude to be used for autonomous weapons and mass surveillance without safety guardrails. While a federal judge blocked the Pentagon's effort to formally blacklist Anthropic and CEO Dario Amodei subsequently met with White House Chief of Staff Susie Wiles — in part due to renewed interest following the Claude Mythos announcement — discussions remain unresolved, with a six-month phase-out of Anthropic tools still officially on the table.</p>
+    <div class="url">🔗 <a href="https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic" target="_blank">https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic</a></div>
+  </article>
+
+  <article>
+    <h3>Anthropic's Run-Rate Revenue Surpasses $30B; Over 1,000 Enterprise Customers Spending $1M+ Annually</h3>
+    <p class="source-line">Anthropic.com — April 2026</p>
+    <p>Anthropic disclosed that its annualised run-rate revenue has surpassed $30 billion — up from approximately $9 billion at the end of 2025 — with the number of business customers each spending more than $1 million annually having doubled to over 1,000 in less than two months. To support this demand acceleration, Anthropic expanded its compute partnership with Google and Broadcom, adding substantial TPU capacity, and secured a new compute agreement with SpaceX's Colossus 1 data centre to expand usage limits for Claude Code and the Claude API. The company is also finalising a fundraising round seeking $50 billion at a $900 billion valuation, positioning it alongside OpenAI (valued at $852 billion following a $122 billion March round) as one of the most capitalised private companies in history.</p>
+    <div class="url">🔗 <a href="https://www.anthropic.com/news/google-broadcom-partnership-compute" target="_blank">https://www.anthropic.com/news/google-broadcom-partnership-compute</a></div>
+  </article>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 4 — BENCHMARKS & RESEARCH
+════════════════════════════════════════════ -->
+<section id="section4">
+  <h2 class="section-head"><span class="section-num">04 /</span> Benchmarks &amp; Research</h2>
+
+  <article>
+    <h3>GPT-5.5 Retakes the Public Model Crown Across 14 Benchmarks; Narrowly Beats Mythos on Terminal-Bench 2.0</h3>
+    <p class="source-line">VentureBeat / RDWorld — April–May 2026</p>
+    <p>OpenAI's GPT-5.5 leads among generally available models, achieving state-of-the-art results across 14 publicly comparable benchmarks versus 4 for Claude Opus 4.7 and 2 for Gemini 3.1 Pro, according to VentureBeat's analysis. Its standout performance areas include agentic computer use, economic knowledge work (GDPval), cybersecurity tasks (CyberGym), and complex mathematics (Frontier Math), and it narrowly beat even the restricted Claude Mythos Preview on Terminal-Bench 2.0 with an 82.7% score versus Mythos's 82.0%. However, Opus 4.7 retains the lead on software engineering and tool-free reasoning benchmarks, and Gemini 3.1 Pro leads in academic reasoning and financial analysis — a pattern that confirms the 2026 model landscape is task-specialised rather than winner-take-all.</p>
+    <div class="url">🔗 <a href="https://venturebeat.com/ai/openais-gpt-5-5-is-here-and-its-no-potato-narrowly-beats-anthropics-claude-mythos-preview-on-terminal-bench-2-0" target="_blank">https://venturebeat.com/ai/openais-gpt-5-5-is-here-and-its-no-potato-narrowly-beats-anthropics-claude-mythos-preview-on-terminal-bench-2-0</a></div>
+  </article>
+
+  <article>
+    <h3>Anthropic Releases Claude Opus 4.7 with Elevated Vision, Cybersecurity Safeguards, and Improved Reasoning</h3>
+    <p class="source-line">Anthropic.com — May 4, 2026</p>
+    <p>Anthropic released Claude Opus 4.7, the first publicly available model to incorporate lessons from the restricted Claude Mythos Preview, featuring substantially improved image processing at higher resolution, stronger performance across a range of standard benchmarks compared to Opus 4.6, and automated safeguards that detect and block requests indicating prohibited or high-risk cybersecurity uses. Pricing is unchanged from Opus 4.6 at $5 per million input tokens and $25 per million output tokens, and the model is available across Claude products, the API, Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Foundry. Security professionals wishing to use it for legitimate penetration testing and vulnerability research can apply to Anthropic's new Cyber Verification Program for expanded access.</p>
+    <div class="url">🔗 <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">https://www.anthropic.com/news/claude-opus-4-7</a></div>
+  </article>
+
+  <article>
+    <h3>Stanford AI Index 2026: Benchmarks Are Saturating in Months; Frontier Model Gap Narrows to 3%</h3>
+    <p class="source-line">Stanford HAI / MIT Technology Review — April 2026</p>
+    <p>The Stanford AI Index 2026 reveals that frontier models gained 30 percentage points in a single year on Humanity's Last Exam, compressing the useful lifespan of newly designed benchmarks to mere months — a pace that is straining the measurement infrastructure needed for governance and policy decisions. In Arena Elo ratings as of March 2026, Anthropic (1,503), xAI (1,495), Google (1,494), and OpenAI (1,481) all occupy an extremely tight top tier, with the leading closed model now ahead of the leading open-weight model by only 3.3%. On OSWorld — which tests agents on real computer tasks across operating systems — accuracy jumped from roughly 12% to 66.3%, placing AI within six percentage points of human-level performance on that benchmark.</p>
+    <div class="url">🔗 <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" target="_blank">https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance</a></div>
+  </article>
+
+  <article>
+    <h3>Epoch AI's MirrorCode Benchmark Shows AI Can Already Complete Some Weeks-Long Coding Tasks</h3>
+    <p class="source-line">Epoch AI — April 10, 2026</p>
+    <p>Epoch AI released early results from MirrorCode, a new long-horizon software engineering benchmark co-developed with METR, demonstrating that frontier AI models can already complete some coding tasks that would take a human engineer multiple weeks to accomplish end-to-end. This complements the broader finding from Epoch's Capabilities Index, where GPT-5.5 Pro achieved a new high score of 159 as of April 28, and aligns with a separate Epoch result from March showing that an AI system solved one of the previously unsolved problems in FrontierMath: Open Problems — a dataset of real research-level mathematics that professional mathematicians had failed to crack. Together these results indicate that AI task horizon — the duration of tasks AI can autonomously complete at 50% success — is expanding rapidly into territory that directly challenges knowledge-worker productivity assumptions.</p>
+    <div class="url">🔗 <a href="https://epoch.ai/benchmarks" target="_blank">https://epoch.ai/benchmarks</a></div>
+  </article>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 5 — INDUSTRY TRENDS & ANALYSIS
+════════════════════════════════════════════ -->
+<section id="section5">
+  <h2 class="section-head"><span class="section-num">05 /</span> Industry Trends &amp; Analysis</h2>
+
+  <article>
+    <h3>US Government Formalises Pre-Deployment AI Model Reviews; Google, Microsoft, and xAI Sign On</h3>
+    <p class="source-line">CNBC / CNN Business — May 5, 2026</p>
+    <p>The Commerce Department's Center for AI Standards and Innovation (CAISI) announced formal evaluation agreements with Google DeepMind, Microsoft, and Elon Musk's xAI this week, allowing the US government to assess frontier AI models before public release for cybersecurity risks, potential military misuse, and unexpected behaviours — completing a set of partnerships that now spans all major US AI labs. The move was directly triggered by Anthropic's Claude Mythos Preview announcement last month, which demonstrated the ability to fully autonomously identify and exploit a 17-year-old remote code execution vulnerability in FreeBSD, prompting concern from the Federal Reserve, Treasury, and the National Cyber Director. CAISI has already completed more than 40 model evaluations, and reporting indicates the White House is weighing an executive order to formalise this review as a mandatory pre-launch requirement across the industry.</p>
+    <div class="url">🔗 <a href="https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html" target="_blank">https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html</a></div>
+  </article>
+
+  <article>
+    <h3>Enterprise AI Adoption Crisis: 97% Deploy Agents But Only 29% See Meaningful Organisational ROI</h3>
+    <p class="source-line">Writer.com / Deloitte — April–May 2026</p>
+    <p>Writer's 2026 AI Adoption in the Enterprise survey of 2,400 executives and employees found that nearly all organisations (97%) have deployed AI agents in the past year with 52% of employees already using them daily, yet only 29% of firms report significant organisational ROI despite 59% spending more than $1 million annually on AI. The gap is structural: organisations have individual super-users delivering strong results but lack the systems, governance frameworks, and outcome-accountability mechanisms needed to scale those wins enterprise-wide. Deloitte's parallel 2026 State of AI report adds that worker access to AI rose 50% in 2025 and that AI skills gaps — not technology access — are now the number-one barrier cited by C-suite leaders, suggesting the next competitive battleground is internal enablement architecture rather than model selection.</p>
+    <div class="url">🔗 <a href="https://writer.com/blog/enterprise-ai-adoption-2026/" target="_blank">https://writer.com/blog/enterprise-ai-adoption-2026/</a></div>
+  </article>
+
+  <article>
+    <h3>Agentic AI Adoption Hits 48% in Telco and 47% in Retail; 86% of Enterprises Increasing AI Budgets</h3>
+    <p class="source-line">NVIDIA State of AI Report 2026 — March 2026</p>
+    <p>NVIDIA's 2026 State of AI survey of 3,200-plus respondents across financial services, retail, healthcare, telecom, and manufacturing found that 86% of organisations will increase their AI budgets in 2026, with nearly 40% planning increases of 10% or more — driven primarily by the shift from pilot deployments to full production agentic systems. Telecommunications has the highest current agentic AI adoption rate at 48%, followed closely by retail and consumer packaged goods at 47%, with enterprises in these sectors deploying agents for customer automation, supply chain orchestration, and real-time decisioning. A Cisco report surveying 650 executives across six countries adds further urgency, finding that 80% of business leaders believe their organisation's survival will depend on agentic AI by 2027, with 55% of the workforce expected to be actively collaborating with AI agents within 24 months.</p>
+    <div class="url">🔗 <a href="https://blogs.nvidia.com/blog/state-of-ai-report-2026/" target="_blank">https://blogs.nvidia.com/blog/state-of-ai-report-2026/</a></div>
+  </article>
+
+  <article>
+    <h3>TechCrunch: 2026 Is the Year AI Moves from Hype to Pragmatism — Fine-Tuned SLMs and Agent Cost Control Take Centre Stage</h3>
+    <p class="source-line">TechCrunch / MIT Sloan Management Review — January–April 2026</p>
+    <p>Multiple industry observers, including TechCrunch and MIT Sloan Management Review, are converging on a consistent 2026 narrative: the industry is sobering up from the agentic AI hype cycle and entering a phase of operational pragmatism, where the key questions are cost-per-task economics, governance architecture, and domain-specific fine-tuning rather than raw benchmark leadership. AT&amp;T's Chief Data Officer told TechCrunch that fine-tuned small language models (SLMs) are becoming a core enterprise strategy in 2026, as they match larger general models on domain-specific tasks at a fraction of the cost and latency. Stanford's AI Index adds a structural labour market data point: employment for software developers aged 22 to 25 has fallen nearly 20% since 2022, suggesting AI-driven productivity gains are beginning to register at a macro level even as the broader job market impact remains contested.</p>
+    <div class="url">🔗 <a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/" target="_blank">https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/</a></div>
+  </article>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <p>Curated for Wiise CTO &mdash; Daily Briefing &nbsp;|&nbsp; Generated Monday, May 11, 2026</p>
+  <p style="margin-top:4px; font-size:8pt; color:#aaa;">This digest is compiled from publicly available sources. Summaries are editorial paraphrases and do not reproduce source text verbatim.</p>
+</footer>
+
+</body>
+</html>
