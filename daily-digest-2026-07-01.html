@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI &amp; Agentic Tech Daily Digest — Wednesday, July 01, 2026</title>
+<style>
+  /* ── Reset &amp; base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+
+  /* ── Screen layout ── */
+  @media screen {
+    body { max-width: 800px; margin: 0 auto; padding: 2cm; }
+    a { color: #003366; text-decoration: underline; }
+    a:hover { color: #0055aa; }
+    .toc a { color: #003366; }
+  }
+
+  /* ── Print layout ── */
+  @media print {
+    body { padding: 2cm; font-size: 11pt; }
+    h2 { page-break-before: always; }
+    h2.no-break-before { page-break-before: avoid; }
+    article { page-break-inside: avoid; }
+    .url { display: none; }
+    a::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+    nav a::after { content: ""; }
+    .masthead a::after { content: ""; }
+  }
+
+  /* ── Masthead ── */
+  .masthead {
+    border-bottom: 3px solid #003366;
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+  }
+  .masthead h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #003366;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .masthead .dateline {
+    font-size: 10pt;
+    color: #555;
+    font-style: italic;
+  }
+
+  /* ── Table of Contents ── */
+  nav.toc {
+    background: #f4f7fb;
+    border-left: 4px solid #003366;
+    padding: 14px 18px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+  }
+  nav.toc h2 {
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #003366;
+    margin-bottom: 8px;
+    page-break-before: avoid;
+  }
+  nav.toc ol {
+    padding-left: 20px;
+  }
+  nav.toc li {
+    margin-bottom: 4px;
+    font-size: 10.5pt;
+  }
+
+  /* ── Section headings ── */
+  h2.section-title {
+    font-size: 14pt;
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  /* ── Articles ── */
+  article {
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dde3ec;
+  }
+  article:last-child { border-bottom: none; }
+
+  article h3 {
+    font-size: 12pt;
+    color: #002244;
+    margin-bottom: 3px;
+    line-height: 1.4;
+  }
+
+  .source-line {
+    font-style: italic;
+    font-size: 9.5pt;
+    color: #666;
+    margin-bottom: 7px;
+  }
+
+  article p {
+    font-size: 11pt;
+    line-height: 1.65;
+    color: #222;
+  }
+
+  .url {
+    margin-top: 6px;
+    font-size: 8.5pt;
+    color: #888;
+    word-break: break-all;
+  }
+
+  /* ── Footer ── */
+  footer {
+    margin-top: 36px;
+    border-top: 2px solid #003366;
+    padding-top: 10px;
+    font-size: 9pt;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* ── Category badge ── */
+  .badge {
+    display: inline-block;
+    background: #003366;
+    color: #fff;
+    font-size: 8pt;
+    padding: 1px 7px;
+    border-radius: 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+    font-style: normal;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     MASTHEAD
+════════════════════════════════════════ -->
+<header class="masthead">
+  <h1>AI &amp; Agentic Tech Daily Digest</h1>
+  <div class="dateline">Wednesday, July 01, 2026 &nbsp;|&nbsp; Curated for Technology Leadership</div>
+</header>
+
+<!-- ═══════════════════════════════════════
+     TABLE OF CONTENTS
+════════════════════════════════════════ -->
+<nav class="toc" aria-label="Table of Contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#section1">Agentic AI &amp; Frameworks</a> — Microsoft Agent Framework GA, Google ADK's A2A protocol, CrewAI x NVIDIA, multi-agent governance</li>
+    <li><a href="#section2">Developer Tools &amp; Capabilities</a> — AI coding market shift, Cursor new pricing tier, Copilot usage-based billing, Claude Code dominance</li>
+    <li><a href="#section3">Enterprise &amp; Products</a> — Anthropic IPO filing &amp; $965B valuation, Microsoft MAI models, OpenAI Partner Network, Copilot Cowork GA</li>
+    <li><a href="#section4">Benchmarks &amp; Research</a> — GPT-5.6 Sol preview, Fable 5 suspension &amp; restoration, open-source MoE landscape, Agentjacking security exploit</li>
+    <li><a href="#section5">Industry Trends &amp; Analysis</a> — US export-control precedent, EU AI Act Phase 2, state AI laws, China's $295B plan, enterprise ROI pressure</li>
+  </ol>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     SECTION 1: AGENTIC AI & FRAMEWORKS
+════════════════════════════════════════ -->
+<section id="section1">
+  <h2 class="section-title no-break-before">1. Agentic AI &amp; Frameworks</h2>
+
+  <article>
+    <h3>Microsoft Agent Framework Reaches 1.0 GA, Unifying AutoGen and Semantic Kernel</h3>
+    <div class="source-line">Source: LangChain Resources / Microsoft — June 2026</div>
+    <p>Microsoft's unified Agent Framework — the successor to both AutoGen and Semantic Kernel — shipped its Python and .NET runtimes simultaneously at 1.0 GA on April 3, 2026, bringing declarative YAML agent configuration and migration assistants for teams transitioning from either predecessor product. The framework combines AutoGen's conversational multi-agent abstractions with Semantic Kernel's enterprise staples: session-based state management, middleware, telemetry, and type safety, while adding graph-based workflows for precise control over multi-agent execution paths. For teams on the Microsoft stack, the recommendation is now unambiguous — new development should target Agent Framework, with bug fixes and security patches continuing for existing AutoGen and Semantic Kernel deployments during a defined support window.</p>
+    <div class="url">https://www.langchain.com/resources/ai-agent-frameworks</div>
+  </article>
+
+  <article>
+    <h3>Google ADK Stands Out With Native Agent-to-Agent (A2A) Protocol Support</h3>
+    <div class="source-line">Source: GuruSup Multi-Agent Frameworks Guide — May 2026</div>
+    <p>Google's Agent Development Kit (ADK), released in April 2025 and now a maturing production option for GCP-native teams, distinguishes itself with built-in support for the A2A (Agent-to-Agent) protocol — a standardised task interface that allows an ADK agent to discover and invoke agents built with entirely different frameworks such as LangGraph or CrewAI. The hierarchical agent tree model, tight Vertex AI integration, and batteries-included debugging UI make it the recommended choice for teams already committed to Google Cloud. Organisations evaluating multi-cloud or heterogeneous agent architectures should note that A2A interoperability is rapidly becoming a differentiating capability in the 2026 framework landscape.</p>
+    <div class="url">https://gurusup.com/blog/best-multi-agent-frameworks-2026</div>
+  </article>
+
+  <article>
+    <h3>CrewAI Integrates NVIDIA NemoClaw Stack for Infrastructure-Level Policy Enforcement</h3>
+    <div class="source-line">Source: MHTECHIN Technologies — 2026</div>
+    <p>In early 2026, CrewAI announced integration with NVIDIA's NemoClaw stack, creating a new security posture for enterprise deployments that enforces policies at the infrastructure level rather than within agent code itself — meaning even unexpected changes to an agent's internal logic cannot override defined security constraints at runtime. The combination is being positioned for regulated-industry use cases where agent behaviour auditability and policy enforcement are non-negotiable. CrewAI's core open-source library remains free while enterprise tooling covering UI, role-based access control, and deployment management moves to a paid tier — a commercialisation model the community is watching closely.</p>
+    <div class="url">https://www.mhtechin.com/support/orchestration-frameworks-for-agentic-ai-langchain-autogen-crewai-the-complete-2026-guide/</div>
+  </article>
+
+  <article>
+    <h3>2026 Framework Decision Matrix: LangGraph for Production, CrewAI for Prototyping, AutoGen for Research</h3>
+    <div class="source-line">Source: Towards AI / Alice Labs — April–June 2026</div>
+    <p>A growing body of practitioner analysis in mid-2026 converges on a clear framework selection heuristic: LangGraph is the default for complex stateful workflows that demand explicit control over branching, retries, and human-in-the-loop interruption; CrewAI offers the fastest path to role-based multi-agent prototypes; and AutoGen (now AG2 / Microsoft Agent Framework) excels in Microsoft-aligned or research-heavy experimentation contexts where conversational agent collaboration is core. A key production warning for AutoGen users: open-ended agent debates can consume five to ten times the expected token budget without hard termination conditions, making token-ceiling configuration essential before any high-volume deployment.</p>
+    <div class="url">https://alicelabs.ai/en/insights/best-ai-agent-frameworks-2026</div>
+  </article>
+
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 2: DEVELOPER TOOLS & CAPABILITIES
+════════════════════════════════════════ -->
+<section id="section2">
+  <h2 class="section-title">2. Developer Tools &amp; Capabilities</h2>
+
+  <article>
+    <h3>AI Coding Market Fractures Into Three-Way Race: Copilot Falls, Claude Code and Cursor Surge</h3>
+    <div class="source-line">Source: Pasqualepillitteri.it / Uvik Software — May–June 2026</div>
+    <p>The AI coding tools market has hit $12.8 billion in 2026, growing at over 24% annually, and the competitive landscape has fundamentally shifted: GitHub Copilot's share among professional developers fell from 67% to 51% according to the Stack Overflow Developer Survey, while Claude Code achieved six-fold adoption growth between April 2025 and January 2026, reaching 18% workplace adoption — tied with Cursor — in the JetBrains January 2026 survey. Most strikingly, among developers with more than ten years of experience, 46% prefer Claude Code versus just 9% who choose Copilot. The market now operates on a three-tier mental model: Copilot wins enterprise procurement defaults, Cursor wins daily IDE workflow, and Claude Code wins deep multi-file reasoning and autonomous refactoring.</p>
+    <div class="url">https://pasqualepillitteri.it/en/news/3392/github-copilot-cursor-claude-code-ai-coding-showdown-2026</div>
+  </article>
+
+  <article>
+    <h3>Cursor Introduces Premium Seat Tier and Usage Pool Split — Effective July 1, 2026</h3>
+    <div class="source-line">Source: Developers Digest — June 28, 2026</div>
+    <p>Cursor rolled out a significant pricing restructure in June 2026: Teams plans now split usage into two pools — one for first-party Cursor models including Composer 2.5, and a separate pool for third-party API calls to Claude, GPT, and Gemini — with Cursor estimating the change reduces costs for 90% of teams. A new Teams Premium tier at $120 per seat per month (five times the usage limits of Standard) was added specifically for developers running agents continuously throughout the working day. The changes took effect immediately for new customers, with existing customers migrating on July 1, 2026 — a date that lands today, making this a live operational item for engineering leaders with active Cursor contracts.</p>
+    <div class="url">https://www.developersdigest.tech/blog/ai-coding-tools-pricing-june-2026</div>
+  </article>
+
+  <article>
+    <h3>GitHub Copilot Transitions to Usage-Based AI Credits Billing from June 1, 2026</h3>
+    <div class="source-line">Source: Developers Digest / CNBC — June 2026</div>
+    <p>GitHub Copilot completed its transition to a usage-based billing model on June 1, 2026, replacing flat-fee plans with AI Credits allocations: Pro plans include $15 per month in credits, Pro+ includes $70, and Max includes $200, with premium model selections drawing from the credit pool. Microsoft also launched MAI-Code-1-Flash as generally available for Copilot Business and Enterprise tiers, delivering fast low-latency responses suited to high-volume agentic coding workflows and providing enterprise teams an in-house model alternative to third-party providers for iterative agent sessions. With over 26 million registered users and 90% Fortune 100 penetration, Copilot's installed base remains massive even as its share of engaged developers continues to erode.</p>
+    <div class="url">https://www.developersdigest.tech/blog/ai-coding-tools-pricing-june-2026</div>
+  </article>
+
+  <article>
+    <h3>Benchmark Study: Claude Code Leads Multi-File Refactors; Cursor Wins Daily Editing; Copilot Fastest for One-Shots</h3>
+    <div class="source-line">Source: Jacar.es Engineering Blog — May 2026</div>
+    <p>A practical five-task benchmark conducted by a platform engineering team in April 2026 across clean sessions found clear tool-specific strengths: Claude Code completed a 14-file type-migration refactor in 17 minutes with the first pull request passing review with no comments, while Cursor took 22 minutes and Copilot 38 minutes — with Copilot requiring two additional follow-up rounds to catch missed files. For small well-bounded tasks such as adding a REST endpoint with tests, all three tools delivered similar results in roughly 10–12 minutes. The study supports the now-dominant "hybrid stack" pattern among experienced developers: Cursor or Copilot for the 80% of daily editing work, Claude Code reserved for the 20% that requires deep multi-file reasoning.</p>
+    <div class="url">https://jacar.es/en/claude-code-cursor-copilot-2026/</div>
+  </article>
+
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 3: ENTERPRISE & PRODUCTS
+════════════════════════════════════════ -->
+<section id="section3">
+  <h2 class="section-title">3. Enterprise &amp; Products</h2>
+
+  <article>
+    <h3>Anthropic Confidentially Files for IPO at $965 Billion Valuation After $65B Series H</h3>
+    <div class="source-line">Source: Euronews / TechWire Asia / CNBC — June 2026</div>
+    <p>Anthropic filed confidentially for an initial public offering on June 1, 2026 — just days after closing a $65 billion Series H funding round led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital — pushing its post-money valuation to $965 billion and briefly surpassing OpenAI's valuation. The company reported that its run-rate revenue surpassed $30 billion in April, up from approximately $9 billion at the end of 2025, and that the number of business customers spending more than $1 million annually has exceeded 1,000. OpenAI made a similar confidential filing a week later, setting up what could be two of the largest tech IPOs in history arriving in close succession.</p>
+    <div class="url">https://techwireasia.com/2026/06/anthropic-claude-enterprise-ai-openai-google/</div>
+  </article>
+
+  <article>
+    <h3>Microsoft Launches MAI-Thinking-1 Reasoning Model and MAI-Code-1-Flash at Build 2026</h3>
+    <div class="source-line">Source: Euronews — June 2026</div>
+    <p>At Microsoft Build, the company unveiled MAI-Thinking-1, its first reasoning model trained from scratch on clean commercially licensed data — a 35-billion active-parameter model with a 256,000-token context window designed for complex multi-step instructions, long-context reasoning, and code generation. In blind evaluations run by independent partner Surge, MAI-Thinking-1 was reportedly preferred over Anthropic's Claude Sonnet 4.6, with Microsoft claiming it matches Claude Opus 4.6 on coding benchmarks. Alongside the reasoning model, Microsoft launched MAI-Code-1-Flash for converting text descriptions directly into application source code, and CEO Satya Nadella used the conference to signal that the era of simply consuming frontier models is giving way to enterprises fully participating at the frontier.</p>
+    <div class="url">https://www.euronews.com/next/2026/06/03/microsoft-launches-its-own-ai-models-to-take-on-openai-and-anthropic</div>
+  </article>
+
+  <article>
+    <h3>OpenAI Launches $150M Partner Network and Targets 300,000 AI Consultant Certifications by Year End</h3>
+    <div class="source-line">Source: SoftSnow Blog — June 2026</div>
+    <p>On June 14, OpenAI announced the OpenAI Partner Network — a structured programme for consulting firms, systems integrators, and technology companies to build, sell, and deliver AI solutions alongside OpenAI — backed by a $150 million investment commitment and a goal of certifying 300,000 AI consultants by the end of 2026. The announcement explicitly stated that the limiting factor for AI value in enterprise is no longer model capability but the implementation layer: strategy, workflow design, and change management. The move mirrors Anthropic's March launch of the Claude Partner Network with an initial $100 million commitment for partner training, technical support, certification, and joint market development — signalling that both frontier labs are betting the enterprise race is won through partner ecosystems, not model specs alone.</p>
+    <div class="url">https://softsnow.ai/blog-posts/anthropic-openai-microsoft-june-2026</div>
+  </article>
+
+  <article>
+    <h3>Anthropic Embeds Claude Into Microsoft Office, Acquires Stainless for MCP Server Tooling</h3>
+    <div class="source-line">Source: TechWire Asia — June 2026</div>
+    <p>According to an IDC report covering Anthropic's first five months of 2026, the company has added Claude directly into Microsoft Office workflows including Excel, PowerPoint, Word, and Outlook, while also expanding integrations with IDEs, Figma, Canva, Blender, and mobile apps. In May, Anthropic acquired Stainless — a company focused on SDKs and MCP (Model Context Protocol) server tooling — to accelerate the SDK infrastructure that connects AI agents with external systems. Despite logging more than 100 public updates in the period, the IDC survey of over 1,000 end-user organisations found that 19% use Claude extensively against higher enterprise penetration numbers for OpenAI and Google, suggesting the product momentum has not yet fully translated into enterprise footprint.</p>
+    <div class="url">https://techwireasia.com/2026/06/anthropic-claude-enterprise-ai-openai-google/</div>
+  </article>
+
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 4: BENCHMARKS & RESEARCH
+════════════════════════════════════════ -->
+<section id="section4">
+  <h2 class="section-title">4. Benchmarks &amp; Research</h2>
+
+  <article>
+    <h3>OpenAI Previews GPT-5.6 Sol with Tiered Pricing After Government Asks for Staggered Release</h3>
+    <div class="source-line">Source: TechCrunch / Tom's Hardware — June 26, 2026</div>
+    <p>OpenAI has begun a limited preview of GPT-5.6, introducing three model sizes — Sol, Terra, and Luna — with Sol priced at $5 per million input tokens and $30 per million output tokens, Terra at half that, and Luna at $1/$6. OpenAI claims Sol is slightly better than Anthropic's Claude Mythos 5 at coding workflows while using a third of the output tokens, and that safety guardrails are built directly into the core model's behaviour rather than applied as a separate filter layer. The preview rollout came after the US government requested a staggered release following the Fable 5 incident, with Commerce Secretary Howard Lutnick reportedly calling CEO Sam Altman to warn against releasing the model without prior agency approval — pressure OpenAI agreed to accommodate while stating that restrictions should not become the long-term norm.</p>
+    <div class="url">https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/</div>
+  </article>
+
+  <article>
+    <h3>Open-Source MoE Models Mature: Meta Llama 4, DeepSeek v3.2, and Kimi K2.5 Push Capability Frontier</h3>
+    <div class="source-line">Source: devFlokers — June 2026</div>
+    <p>The open-source model landscape in mid-2026 is dominated by Mixture-of-Experts architectures: Meta's Llama 4 Scout (109B total, 16 experts, 10M-token context window) and Llama 4 Maverick (400B total with competitive multimodal reasoning) are deployed under the Llama 4 Community License; DeepSeek v3.2, a 671B-parameter model activating only 37B per token under an MIT licence, leads the open sector in mathematical execution, scoring 96.0% on the GSM8K math benchmark; and Moonshot AI's Kimi K2.5 — a trillion-parameter model with 32B active parameters per token — leverages the Muon reinforcement learning optimiser to significantly improve autonomous tool-call execution. Taken together, a curated panel of budget open-source models is now scoring within one percentage point of Anthropic's Fable 5 on the DRACO benchmark at roughly half the cost.</p>
+    <div class="url">https://www.devflokers.com/blog/ai-news-june-2026-models-research-developments</div>
+  </article>
+
+  <article>
+    <h3>"Agentjacking" Exploit Targets Claude Code, Cursor, and Codex With 85% Exploitation Rate</h3>
+    <div class="source-line">Source: Kersai / Snyk Security — June 2026</div>
+    <p>On June 13, Tenet Security disclosed "Agentjacking" — a novel attack class using fake Sentry error reports with markdown injection to hijack AI coding agents including Claude Code, Cursor, and OpenAI Codex into executing malicious commands — achieving an 85% exploitation rate and exposing 2,388 organisations in disclosed testing. The attack is notable as the first major security threat class purpose-built for the agentic coding era, exploiting the trust these agents extend to developer tooling outputs rather than attacking model weights or APIs directly. CTOs deploying autonomous coding agents in production environments should treat this disclosure as an urgent prompt to audit tool-call permission scopes and validate any error-reporting integrations that agents are permitted to read and act upon autonomously.</p>
+    <div class="url">https://kersai.com/ai-breakthroughs-june-2026-mid-year-update/</div>
+  </article>
+
+  <article>
+    <h3>Anthropic Study of 400,000 Claude Code Sessions Finds Domain Expertise Drives Autonomous Output</h3>
+    <div class="source-line">Source: Kersai / Build This Now — June 2026</div>
+    <p>Anthropic published research analysing 400,000 Claude Code sessions recorded between October 2025 and April 2026, finding that users' domain expertise — not their raw programming ability — is the strongest predictor of how much autonomous work the model performs successfully on their behalf. The research challenges the common assumption that AI coding agents primarily amplify junior developers; instead, it suggests practitioners who deeply understand the problem domain extract disproportionately more autonomous value from the tool. Separately, mid-2026 research published by Build This Now found that open-source tooling improvements delivered up to 25% average gains on tool-calling benchmarks (BFCL, ACEBench), and that a 30-billion-parameter open model reached 64% on a real coding benchmark — indicating the gap between closed frontier and capable open-source models is narrowing for practical agentic use cases.</p>
+    <div class="url">https://www.buildthisnow.com/blog/guide/mechanics/ai-research-june-2026</div>
+  </article>
+
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 5: INDUSTRY TRENDS & ANALYSIS
+════════════════════════════════════════ -->
+<section id="section5">
+  <h2 class="section-title">5. Industry Trends &amp; Analysis</h2>
+
+  <article>
+    <h3>Fable 5 Suspension Sets Historic Precedent: Government "Kill-Switch" Over Frontier AI Is Now Operational Fact</h3>
+    <div class="source-line">Source: Forbes / Anthropic Official Statement / FifthRow — June 12–27, 2026</div>
+    <p>On June 12, 2026, the US Department of Commerce issued a legally binding export-control directive ordering Anthropic to suspend access to its newly launched Claude Fable 5 and Mythos 5 models for all foreign nationals worldwide — including Anthropic's own non-citizen employees — within hours of the letter's delivery. Because filtering users by nationality in real time was technically infeasible across dozens of cloud platforms including AWS Bedrock, Google Cloud, and Microsoft Foundry, Anthropic executed a universal shutdown affecting all customers globally. Axios reported on June 27 that Fable 5 is on track to return within days after negotiations progressed, with Commerce Secretary Howard Lutnick's June 26 letter clearing Mythos 5 for roughly 100 US institutions — but the episode permanently establishes that a regulatory kill-switch over commercially deployed frontier models is no longer theoretical, and has exposed critical gaps in enterprise SLA and force-majeure contract language.</p>
+    <div class="url">https://www.forbes.com/sites/anishasircar/2026/06/16/anthropic-disabled-fable-5-and-mythos-5-after-a-us-export-control-order-heres-what-happened/</div>
+  </article>
+
+  <article>
+    <h3>EU AI Act Phase 2 Looms August 2, 2026 — Companies in Regulated Sectors Face Immediate Compliance Pressure</h3>
+    <div class="source-line">Source: Kiteworks / Clifford Chance — 2026</div>
+    <p>The EU AI Act's second phase of compliance requirements takes effect on August 2, 2026, imposing transparency obligations and risk-classification rules for AI systems used in critical infrastructure, education, employment, essential services, law enforcement, and immigration. Simultaneously in the US, California's Transparency in Frontier AI Act (SB 53) now requires frontier AI developers to publish safety and security frameworks and report safety incidents, while California's AB 2013 mandates public disclosure of training dataset composition — obligations that took effect earlier in 2026. A 42-state attorney general coalition is coordinating AI enforcement pressure, and cyber insurers are increasingly introducing "AI Security Riders" requiring documented red-teaming and model-level risk assessments as prerequisites for coverage, transforming AI governance from a reputational concern into an insurance and legal liability issue.</p>
+    <div class="url">https://www.kiteworks.com/cybersecurity-risk-management/ai-regulation-2026-business-compliance-guide/</div>
+  </article>
+
+  <article>
+    <h3>China Announces $295 Billion Five-Year AI Infrastructure Plan, Targeting 80%+ Domestic Chip Dependency</h3>
+    <div class="source-line">Source: Kersai — June 2026</div>
+    <p>On June 9, China announced a $295 billion five-year AI infrastructure plan explicitly targeting over 80% reliance on domestic chips — a direct state-capital counter to US export controls on advanced semiconductors. The plan signals that geopolitical AI competition has moved from capability racing at the model layer to a deeper contest over hardware supply chains, data-centre infrastructure, and the ability to develop and deploy frontier AI independently of US technology. For multinational enterprises evaluating AI infrastructure strategy, the announcement accelerates the bifurcation of the global AI stack and raises questions about long-term data residency, model access, and sovereign AI obligations across operating jurisdictions.</p>
+    <div class="url">https://kersai.com/ai-breakthroughs-june-2026-mid-year-update/</div>
+  </article>
+
+  <article>
+    <h3>Enterprise AI Moves From Pilots to P&amp;L Scrutiny — Vendors Pivoting to Workflow ROI Messaging</h3>
+    <div class="source-line">Source: Forbes / VentureBeat — 2026</div>
+    <p>A consistent theme across mid-2026 industry analysis is that enterprise AI adoption is leaving the pilot phase and entering hard return-on-investment accountability: vendors are explicitly repositioning from capability-led sales towards workflow integration, governance, and measurable outcome arguments. VentureBeat coverage highlights two concrete examples of this shift — Alibaba building simulation environments that generate edge cases on demand to improve agent quality before production, and Xiaomi developing a framework that automatically diagnoses agent scaffolding failures and rewrites its own orchestration. Shopify's engineering leadership has similarly published guidance on proxy and distillation strategies with circuit-breaker patterns for AI stack stability, reflecting a maturation from "will this model work?" to "how do we keep it working reliably at scale?"</p>
+    <div class="url">https://venturebeat.com/category/ai</div>
+  </article>
+
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  Curated for Wiise CTO &mdash; Daily Briefing &nbsp;|&nbsp; Generated Wednesday, July 01, 2026 &nbsp;|&nbsp; AI &amp; Agentic Tech Daily Digest
+</footer>
+
+</body>
+</html>
